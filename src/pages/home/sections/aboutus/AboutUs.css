@@ -1,0 +1,50 @@
+.aboutus {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: auto;
+}
+.aboutus .content {
+  background-color: #7c2ae8;
+}
+.aboutus .content .container {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.aboutus .content .container p {
+  color: white;
+}
+.aboutu .aboutus-left {
+  position: relative;
+}
+.aboutus .aboutus-img {
+  background-color: black;
+  width: 25vw;
+  height: 60vh;
+  position: absolute;
+  margin-top: -12vh;
+  background-image: url(../../../../assets/img/aboutus.jpeg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.aboutus .sdgs {
+  margin-top: 5vh;
+}
+.aboutus .sdg-img {
+  width: 130px;
+  height: 100px;
+  margin: 5px;
+}
+@media (max-width: 992px) {
+  .aboutus {
+    margin-top: 2vh;
+  }
+  .aboutus .aboutus-img {
+    position: relative;
+    width: 100vw;
+    margin-top: 0;
+  }
+  .aboutus .sdgs {
+    margin-top: 2vh;
+  }
+}

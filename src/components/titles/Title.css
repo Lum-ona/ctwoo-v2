@@ -1,0 +1,13 @@
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.title h2 {
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: uppercase;
+}

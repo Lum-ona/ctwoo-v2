@@ -1,0 +1,53 @@
+.hero {
+  width: 100vw;
+  height: auto;
+  background: linear-gradient(to bottom, #e4d5fb, white);
+}
+.hero .container {
+  width: 100%;
+  height: 100%;
+}
+.hero .container .content {
+  height: 90%;
+  width: 85%;
+}
+.hero .row {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero .left-hero .hero-button {
+  /* border: solid 1px gray; */
+  padding: 10px;
+  border-radius: 10px;
+  width: 180px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.508);
+}
+.hero .left-hero .hero-button:hover {
+  box-shadow: 5px 7px 10px gray;
+  border: none;
+}
+.hero .right-hero {
+  background-position: left center;
+  background-size: cover;
+  transform: 0.4s;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .hero .right-hero {
+    width: 100vw;
+  }
+  .hero .left-hero {
+    position: absolute;
+    background: linear-gradient(to top, #ffffff, #e4d5fb, #e4d5fb94);
+    height: 80vh;
+  }
+  .hero .container .content {
+    height: 90%;
+    width: 100%;
+  }
+}

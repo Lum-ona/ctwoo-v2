@@ -1,0 +1,31 @@
+.widowhood-data {
+  padding-top: 3vh;
+  background: linear-gradient(to bottom, #efe5fd, white);
+}
+.widowhood-data .widowhood-data-img {
+  height: 240px;
+  width: 300px;
+  background-color: black;
+}
+.widowhood-data .widowhood-data-content {
+  width: 100vw;
+  background-color: #7c2ae8;
+  color: white;
+  height: 20vh;
+  min-height: 20vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.widowhood-data .widowhood-stats .widowhood-stats-img {
+  width: 40%;
+}
+
+@media (max-width: 992px) {
+  .widowhood-data .widowhood-data-content {
+    height: auto;
+    padding: 10px;
+  }
+  .widowhood-data .widowhood-stats .widowhood-stats-img {
+    width: 100%;
+  }
+}

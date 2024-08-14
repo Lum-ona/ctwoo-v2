@@ -1,0 +1,27 @@
+.highlights {
+  padding-top: 5vh;
+  margin-top: 5vh;
+  background: linear-gradient(to right, #8dc182, white, #be98f4);
+}
+.highlights img {
+  min-width: 250px;
+  max-height: 200px;
+  margin-right: 30px;
+  border-radius: 10px;
+  background-color: black;
+  object-fit: cover;
+}
+.highlights h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.highlights p {
+  font-size: 15px;
+}
+.highlights .content {
+  margin-bottom: 3vh;
+  width: 45vw;
+}
+
+@media (max-width: 992px) {
+}

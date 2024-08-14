@@ -1,0 +1,28 @@
+.annual-events {
+  margin-top: 5vh;
+}
+.annual-events .event-img {
+  width: 100px;
+  height: 100px;
+}
+.annual-events .event-title {
+  background-color: #7c2ae8;
+  color: white;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 10px;
+}
+.annual-events .event-title h3 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.annual-events .event-content p {
+  text-align: center;
+}
+.annual-events .btn {
+  width: 200px;
+  /* box-shadow: 5px 7px 10px gray; */
+  border: solid 1px gray;
+}
