@@ -14,7 +14,7 @@ import sdg17 from "../../../../assets/img/sdgs/sdg17.png";
 export default function AboutUs() {
   const sdgs = [sdg1, sdg2, sdg3, sdg4, sdg5, sdg6, sdg10, sdg13, sdg16, sdg17];
   return (
-    <div className="aboutus">
+    <div className="aboutus" id="about-us">
       <Title title={"About us"} />
       <div className="content row d-flex flex-sm-column-reverse flex-lg-row justify-content-evenly">
         <div className="aboutus-left col-lg-3">
@@ -48,7 +48,12 @@ export default function AboutUs() {
         <div className="col-lg-6 d-flex align-items-center justify-content-center">
           <div className="row d-flex align-items-center justify-content-center">
             {sdgs.map((item, index) => (
-              <img src={item} key={index} className="sdg-img col-lg-2" />
+              <img
+                alt={"sdgs"}
+                src={item}
+                key={index}
+                className="sdg-img col-lg-2"
+              />
             ))}
           </div>
         </div>

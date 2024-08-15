@@ -24,6 +24,10 @@
   height: 180px;
   background-color: black;
   width: 250px;
+  object-fit: cover;
+}
+.our-strategy .container .row > div:nth-child(1) {
+  /* background-color: blue; */
 }
 .our-strategy .container .row > div:nth-child(2) {
   background-color: red;

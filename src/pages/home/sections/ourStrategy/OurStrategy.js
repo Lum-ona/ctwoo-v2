@@ -1,5 +1,8 @@
 import "./OurStrategy.css";
 import Title from "../../../../components/titles/Title";
+import img1 from "../../../../assets/img/hero/hero1.jpeg";
+import img2 from "../../../../assets/img/inspire.jpeg";
+import img3 from "../../../../assets/img/empower.jpeg";
 
 export default function OurStrategy() {
   return (
@@ -18,7 +21,7 @@ export default function OurStrategy() {
               and welfare of widows. By partnering with local and international
               NGOs, we amplify our efforts and ensure a broader impact.
             </p>
-            <img alt="advocate" className="our-strategy-img" />
+            <img alt="advocate" className="our-strategy-img" src={img1} />
           </div>
           <div className="inspire col-lg-3">
             <h2>INSPIRE</h2>
@@ -30,7 +33,7 @@ export default function OurStrategy() {
               programs that inspire widows to advocate for their rights and take
               on leadership roles within their communities.
             </p>
-            <img alt="advocate" className="our-strategy-img" />
+            <img alt="advocate" className="our-strategy-img" src={img2} />
           </div>
           <div className="empower col-lg-3">
             <h2>EMPOWER</h2>
@@ -41,7 +44,7 @@ export default function OurStrategy() {
               empowering widows to assert their rights and actively participate
               in policy-making processes that affect their lives.
             </p>
-            <img alt="advocate" className="our-strategy-img" />
+            <img alt="advocate" className="our-strategy-img" src={img3} />
           </div>
         </div>
       </div>

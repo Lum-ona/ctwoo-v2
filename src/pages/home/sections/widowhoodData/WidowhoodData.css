@@ -4,8 +4,8 @@
 }
 .widowhood-data .widowhood-data-img {
   height: 240px;
-  width: 300px;
-  background-color: black;
+  width: 350px;
+  border-radius: 20px;
 }
 .widowhood-data .widowhood-data-content {
   width: 100vw;

@@ -1,6 +1,9 @@
 import Title from "../../../../components/titles/Title";
 import "./WidowhoodData.css";
 import graph from "../../../../assets/img/widohoodData.png";
+import img1 from "../../../../assets/img/widowhood/widowhood1.jpeg";
+import img2 from "../../../../assets/img/widowhood/widowhood2.jpeg";
+import img3 from "../../../../assets/img/widowhood/widowhood3.jpeg";
 
 export default function WidowhoodData() {
   return (
@@ -8,9 +11,21 @@ export default function WidowhoodData() {
       <Title title={"Widowhood Data"} />
       <div className="container">
         <div className="row d-flex justify-content-between">
-          <img className="widowhood-data-img col-lg-3" />
-          <img className="widowhood-data-img col-lg-3" />
-          <img className="widowhood-data-img col-lg-3" />
+          <img
+            alt="widowhood"
+            className="widowhood-data-img col-lg-3"
+            src={img1}
+          />
+          <img
+            alt="widowhood"
+            className="widowhood-data-img col-lg-3"
+            src={img2}
+          />
+          <img
+            alt="widowhood"
+            className="widowhood-data-img col-lg-3"
+            src={img3}
+          />
         </div>
       </div>
       <div className="widowhood-data-content">
@@ -29,7 +44,7 @@ export default function WidowhoodData() {
         </div>
       </div>
       <div className="widowhood-stats d-flex justify-content-center align-items-center">
-        <img className="widowhood-stats-img" src={graph} />
+        <img alt="widowhood" className="widowhood-stats-img" src={graph} />
       </div>
     </div>
   );

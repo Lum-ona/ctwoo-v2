@@ -1,13 +1,25 @@
 .header {
   background-color: #e4d5fb;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  height: 10vh;
   z-index: 1999;
 }
-
 .header .logo {
   width: 200px;
+}
+.header nav {
+  display: flex;
+  width: 80vw;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.navs {
+  position: relative;
 }
 
 .header nav .nav-option {
@@ -17,4 +29,173 @@
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.header nav .nav-option:hover {
+  box-shadow: 2px 2px 5px #7c2ae8be;
+  color: #7c2ae8;
+  border-radius: 10px;
+}
+
+.header nav .drop-down {
+  position: absolute;
+  top: 110%; /* Position below the nav-option */
+  left: 50%;
+  transform: translateX(-50%); /* Center the dropdown */
+  width: 200px; /* Ensure consistent width */
+  display: flex;
+  flex-direction: column; /* Ensure the dropdown options stack vertically */
+  align-items: center; /* Center the dropdown options */
+}
+
+.header nav .drop-down-option {
+  width: 100%; /* Ensure options take full width */
+  background-color: #7c2ae8da;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  opacity: 0;
+  transform: translateY(-10%) rotateX(90deg);
+  cursor: pointer;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+.header nav .drop-down-option:nth-child(1) {
+  transition: opacity 0.4s, transform 0.6s, visibility 0.4s;
+}
+.header nav .drop-down-option:nth-child(2) {
+  transition: opacity 0.8s, transform 1s, visibility 0.8s;
+}
+.header nav .drop-down-option:nth-child(3) {
+  transition: opacity 1.2s, transform 1.4s, visibility 1.2s;
+}
+.header nav .drop-down-option:nth-child(4) {
+  transition: opacity 1.6s, transform 1.8s, visibility 1.6s;
+}
+
+.header nav .navs.hovered .drop-down-option {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%) rotateX(0deg);
+  transition: 0.4s;
+}
+
+.header nav .navs.hovered .drop-down-option:hover {
+  background-color: #7c2ae8;
+  border-radius: 10px;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+}
+
+.mobile-menu-icon .icon-bar {
+  width: 100%;
+  height: 3px;
+  background-color: #7c2ae8;
+  transition: all 0.3s;
+}
+
+.mobile-menu-icon .icon-bar.open {
+  transform: rotate(45deg);
+  background-color: #7c2ae8;
+}
+
+/* Responsive Design */
+
+/* For Mobile Devices (up to 767px) */
+@media (max-width: 992px) {
+  .header {
+    padding: 0 10px;
+    height: 10vh;
+  }
+
+  .header .logo {
+    width: 100px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50vw !important;
+    background-color: #e4d5fb;
+    height: auto;
+    display: none;
+    padding-left: 10px;
+    visibility: hidden;
+    transform: translateY(-100%);
+    z-index: -1;
+  }
+
+  .nav-menu.open {
+    display: flex;
+    visibility: visible;
+    transform: translateY(0%);
+  }
+
+  .nav-option {
+    /* width: auto; Auto width based on content */
+    padding: 10px 6px;
+    border-bottom: 1px solid #ccc;
+    text-align: left; /* Align the text to the left */
+  }
+
+  .navs:hover .drop-down {
+    position: relative;
+    transform: none;
+    width: 100%;
+    left: 10%;
+  }
+
+  .drop-down {
+    position: relative;
+    transform: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: 0.4s;
+  }
+
+  .drop-down-option {
+    padding: 10px;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+}
+
+/* For Extra Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .header .logo {
+    width: 80px;
+  }
+
+  .nav-option {
+    font-size: 12px;
+    padding: 8px 6px;
+  }
+
+  .drop-down-option {
+    font-size: 12px;
+    padding: 8px;
+  }
 }

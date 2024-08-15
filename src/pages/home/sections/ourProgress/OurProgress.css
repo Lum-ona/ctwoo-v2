@@ -1,0 +1,10 @@
+.our-progress .container {
+  background-image: url(../../../../assets/img/progress.jpeg);
+  height: 70vh;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}

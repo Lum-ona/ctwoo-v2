@@ -46,9 +46,9 @@ export default function Hero() {
     <div className="hero">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="left-hero col-lg-6">
-            <div className="container d-flex justify-content-center align-items-center">
-              <div className="content d-flex flex-column justify-content-evenly align-items-center text-center">
+          <div className="left-hero h-100  col-lg-6">
+            <div className="container h-100  d-flex justify-content-evenly align-items-center">
+              <div className="content h-100 d-flex flex-column justify-content-evenly align-items-center text-center">
                 <h1>Come Together Widows and Orphans Organization.</h1>
                 <p>
                   Champions for the protection of Human Rights and Uphold the

@@ -1,4 +1,5 @@
 .hero {
+  margin-top: 10vh;
   width: 100vw;
   height: auto;
   background: linear-gradient(to bottom, #e4d5fb, white);
@@ -16,8 +17,13 @@
   height: 100%;
   position: relative;
 }
+.hero .left-hero {
+}
+.hero .left-hero .container .content {
+  height: 100%;
+  min-height: 80vh;
+}
 .hero .left-hero .hero-button {
-  /* border: solid 1px gray; */
   padding: 10px;
   border-radius: 10px;
   width: 180px;
@@ -33,7 +39,7 @@
   background-position: left center;
   background-size: cover;
   transform: 0.4s;
-  height: 80vh;
+  height: 70vh;
   border-radius: 10px;
 }
 

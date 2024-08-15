@@ -3,6 +3,9 @@ import Title from "../../../../components/titles/Title";
 import img1 from "../../../../assets/img/highlights/freemed.jpeg";
 import img2 from "../../../../assets/img/highlights/food.jpeg";
 import img3 from "../../../../assets/img/highlights/kits.jpeg";
+import img4 from "../../../../assets/img/highlights/tree.jpeg";
+import img5 from "../../../../assets/img/highlights/paralegal.jpeg";
+import img6 from "../../../../assets/img/highlights/push.jpeg";
 
 export default function Highlights() {
   const highlights = [
@@ -14,6 +17,7 @@ export default function Highlights() {
     },
     {
       title: "TREE PLANTING",
+      img: img4,
       content:
         "To address Climate Change, CTWOO has embraced a tree planting project that is currently being carried out by the Osiligi Le Nkoliae widow  group in Kajiado County. To enhance sustainability  and environmental conservation, CTWOO is  ensuring that widows in their respective  registered groups are also participating in tree planting projects",
     },
@@ -25,6 +29,7 @@ export default function Highlights() {
     },
     {
       title: "PARALEGAL TRAINING",
+      img: img5,
       content:
         "CTWOO has embraced paralegal training for widows, training them as Trainers of Trainers to address the alarming issue of widow’s rights violations. We have graduated our widows in Nairobi, Kiambu, Nyeri and Meru as advocates of their own rights through our paralegal training program. Through this they are able to speak up whenever their rights are violated.",
     },
@@ -36,6 +41,7 @@ export default function Highlights() {
     },
     {
       title: "PUSHING FOR WIDOWS MANUAL ON ECONOMIC EMPOWERMENT",
+      img: img6,
       content:
         "CTWOO actively engages in deliberations with various stakeholders who assist in the formulation of policies for widowed persons. CTWOO is currently developing a manual on economic empowerment for widows in collaboration with the President's Advisor on Women's Rights, Hon. Harriet Chiggai",
     },
@@ -48,7 +54,7 @@ export default function Highlights() {
           {highlights.map((item, index) => (
             <div className="content col-lg-5" key={index}>
               <div className="d-flex justify-content-between">
-                <img className="" src={item.img} />
+                <img alt="ctwoo highlights" className="" src={item.img} />
                 <div className="">
                   <h3>{item.title}</h3>
                   <p>{item.content}</p>

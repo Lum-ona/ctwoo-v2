@@ -1,24 +1,36 @@
 import "./AnnualEvents.css";
 import Title from "../../../../components/titles/Title";
+import val1 from "../../../../assets/img/events/valentine/img1.jpeg";
+import val2 from "../../../../assets/img/events/valentine/img2.jpeg";
+import val3 from "../../../../assets/img/events/valentine/img3.jpeg";
+import val4 from "../../../../assets/img/events/valentine/img4.jpeg";
+import int1 from "../../../../assets/img/events/international/img1.jpeg";
+import int2 from "../../../../assets/img/events/international/img2.jpeg";
+import int3 from "../../../../assets/img/events/international/img3.jpeg";
+import int4 from "../../../../assets/img/events/international/img4.jpeg";
+import day1 from "../../../../assets/img/events/16/img1.jpeg";
+import day2 from "../../../../assets/img/events/16/img2.jpeg";
+import day3 from "../../../../assets/img/events/16/img3.jpeg";
+import day4 from "../../../../assets/img/events/16/img4.jpeg";
 
 export default function AnnualEvents() {
   return (
     <div className="annual-events">
       <Title title={"Our Main Annual Events"} />
       <div className="container">
-        <div className="row d-flex justify-content-between">
+        <div className="row d-flex justify-content-between align-items-start">
           <div className="col-lg-3">
             <div className="images">
               <div className="row">
-                <img className="col event-img" />
-                <img className="col event-img" />
+                <img alt="ctwoo event" className="col event-img" src={val1} />
+                <img alt="ctwoo event" className="col event-img" src={val2} />
               </div>
               <div className="row">
-                <img className="col event-img" />
-                <img className="col event-img" />
-              </div>
+                <img alt="ctwoo event" className="col event-img" src={val3} />
+                <img alt="ctwoo event" className="col event-img" src={val4} />
+              </div>{" "}
             </div>
-            <div className="event-content d-flex flex-column align-items-center">
+            <div className="event-content d-flex flex-column align-items-center justify-content-between">
               <div className="event-title">
                 <h3>Valentines Dinner</h3>
               </div>
@@ -33,18 +45,18 @@ export default function AnnualEvents() {
               <div className="btn">learn more</div>
             </div>
           </div>
-          <div className="col-lg-3 d-flex flex-column justify-content-center">
+          <div className="col-lg-3 d-flex flex-column justify-content-between">
             <div className="images">
               <div className="row">
-                <img className="col event-img" />
-                <img className="col event-img" />
+                <img alt="ctwoo event" className="col event-img" src={int1} />
+                <img alt="ctwoo event" className="col event-img" src={int2} />
               </div>
               <div className="row">
-                <img className="col event-img" />
-                <img className="col event-img" />
+                <img alt="ctwoo event" className="col event-img" src={int3} />
+                <img alt="ctwoo event" className="col event-img" src={int4} />
               </div>
             </div>
-            <div className="event-content d-flex flex-column align-items-center">
+            <div className="event-content d-flex flex-column align-items-center justify-content-between">
               <div className="event-title">
                 <h3>International Widows Day</h3>
               </div>
@@ -61,15 +73,15 @@ export default function AnnualEvents() {
           <div className="col-lg-3">
             <div className="images">
               <div className="row">
-                <img className="col event-img" />
-                <img className="col event-img" />
+                <img alt="ctwoo event" className="col event-img" src={day1} />
+                <img alt="ctwoo event" className="col event-img" src={day2} />
               </div>
               <div className="row">
-                <img className="col event-img" />
-                <img className="col event-img" />
+                <img alt="ctwoo event" className="col event-img" src={day3} />
+                <img alt="ctwoo event" className="col event-img" src={day4} />
               </div>
             </div>
-            <div className="event-content d-flex flex-column align-items-center">
+            <div className="event-content d-flex flex-column align-items-center justify-content-between">
               <div className="event-title">
                 <h3>16 Days of Activism</h3>
               </div>
