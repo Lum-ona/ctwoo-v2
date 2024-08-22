@@ -23,3 +23,9 @@
   border-radius: 50%;
   border: solid 1px;
 }
+@media (max-width: 992px) {
+  .climate .climate-images {
+    width: 95vw;
+    height: 40vh;
+  }
+}

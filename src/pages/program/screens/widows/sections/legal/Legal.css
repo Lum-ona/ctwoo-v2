@@ -22,3 +22,8 @@
   max-height: 150px;
   border: solid 1px green;
 }
+@media (max-width: 992px) {
+  .legal .container .row .images {
+    margin-top: 3vh;
+  }
+}

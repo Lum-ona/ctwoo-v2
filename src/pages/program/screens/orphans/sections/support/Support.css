@@ -11,7 +11,7 @@
 }
 .support .support-images .images {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-aropund;
 }
 
 .support .support-images .col {
@@ -21,4 +21,11 @@
   max-height: 140px;
   border-radius: 50%;
   border: solid 1px;
+}
+
+@media (max-width: 992px) {
+  .support .support-images {
+    width: 100%;
+    height: 40vh;
+  }
 }

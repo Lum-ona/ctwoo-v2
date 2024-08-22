@@ -2,7 +2,7 @@
   padding-top: 5vh;
   padding-bottom: 5vh;
   margin-top: 10vh;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,4 +20,15 @@
 }
 .healthcare .container .row {
   height: 100%;
+}
+@media (max-width: 992px) {
+  .healthcare {
+    height: auto;
+  }
+  .healthcare .container .image {
+    width: 90vw;
+  }
+  .healthcare .container {
+    height: auto;
+  }
 }

@@ -8,7 +8,7 @@ export default function Education() {
         <div className="row">
           <div className="col-lg-6">
             <img className="ed-image" />
-            <img className="ed-image mt-4" />
+            <img className="ed-image mt-lg-4" />
           </div>
           <div className="col-lg-6">
             <Title title={"Education Sponsorship"} />
@@ -24,7 +24,7 @@ export default function Education() {
                 with educational institutions and government officials help
                 secure additional resources and support for these children.
               </p>
-              <p className="mt-5">
+              <p className="mt-lg-5">
                 CTWOO provides mentoring and academic support to help orphans
                 succeed in their studies. Our dedicated mentors offer guidance,
                 tutoring, and emotional support, fostering a nurturing

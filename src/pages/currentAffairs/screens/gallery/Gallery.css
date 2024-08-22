@@ -80,3 +80,8 @@
 .gallery .service-item:hover .img img {
   transform: scale(1.2);
 }
+@media (max-width: 992px) {
+  .gallery .img {
+    width: 100%;
+  }
+}
