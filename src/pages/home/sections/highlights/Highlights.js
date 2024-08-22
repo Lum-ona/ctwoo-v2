@@ -53,9 +53,9 @@ export default function Highlights() {
         <div className="row d-flex justify-content-between">
           {highlights.map((item, index) => (
             <div className="content col-lg-5" key={index}>
-              <div className="d-flex justify-content-between">
+              <div className="d-flex flex-sm-row flex-column justify-content-between">
                 <img alt="ctwoo highlights" className="" src={item.img} />
-                <div className="">
+                <div className="texts">
                   <h3>{item.title}</h3>
                   <p>{item.content}</p>
                 </div>

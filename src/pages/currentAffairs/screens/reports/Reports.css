@@ -1,0 +1,55 @@
+.reports {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: auto;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+.reports .container {
+  margin-top: 10vh;
+  width: 90%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.reports .container .report-card {
+  width: 20vw;
+  height: 40vh;
+  box-shadow: 0px 0px 10px #5902ab;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  text-decoration: none;
+  color: #5902ab;
+  transition: 0.4s;
+}
+.reports .container .report-card .image {
+  height: 70%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.reports .container .report-card .doc-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30%;
+}
+.reports .container .report-card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .reports .container {
+    flex-direction: column;
+  }
+  .reports .container .report-card {
+    width: 90vw;
+    margin-top: 10px;
+  }
+}

@@ -1,14 +1,23 @@
 .highlights {
   padding-top: 5vh;
+  width: 100vw;
   margin-top: 5vh;
   background: linear-gradient(to right, #8dc182, white, #be98f4);
 }
+.highlights .container {
+  width: 100%;
+  padding: 0;
+}
+.highlights .container .row {
+  width: inherit;
+  margin: 0;
+  flex-wrap: wrap;
+}
 .highlights img {
-  min-width: 250px;
+  width: 250px;
   max-height: 200px;
   margin-right: 30px;
   border-radius: 10px;
-  background-color: black;
   object-fit: cover;
 }
 .highlights h3 {
@@ -20,8 +29,24 @@
 }
 .highlights .content {
   margin-bottom: 3vh;
-  width: 45vw;
+  width: 49%;
 }
 
+@media (max-width: 1192px) {
+  .highlights img {
+    min-width: 200px;
+    max-height: 150px;
+  }
+}
 @media (max-width: 992px) {
+  .highlights .content {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .highlights img {
+    width: auto;
+    max-height: 40vh;
+  }
 }

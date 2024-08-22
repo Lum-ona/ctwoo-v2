@@ -1,0 +1,11 @@
+.education {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.education .ed-image {
+  width: 40vw;
+  height: 40vh;
+  max-width: 40vw;
+  max-height: 40vh;
+  border: solid 2px #8932a2;
+}

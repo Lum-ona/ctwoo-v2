@@ -1,0 +1,24 @@
+.psychological .purple-bg {
+  background-color: #8932a2;
+  min-height: 20vh;
+  color: white;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.psychological .container .row .images {
+  margin-top: -30vh;
+  position: relative;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.psychological .container img {
+  width: 180px;
+  height: 150px;
+  max-width: 180px;
+  max-height: 150px;
+  border: solid 1px green;
+}

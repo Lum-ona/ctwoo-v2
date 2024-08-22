@@ -1,0 +1,24 @@
+.support {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  background: linear-gradient(to top, white, #e4d5fb);
+}
+
+.support .support-images {
+  width: 40vw;
+  height: 40vh;
+  border: solid 2px #8932a2;
+}
+.support .support-images .images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.support .support-images .col {
+  width: 140px;
+  height: 140px;
+  max-width: 140px;
+  max-height: 140px;
+  border-radius: 50%;
+  border: solid 1px;
+}

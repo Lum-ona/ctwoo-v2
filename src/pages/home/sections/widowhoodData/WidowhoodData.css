@@ -1,11 +1,13 @@
 .widowhood-data {
   padding-top: 3vh;
-  background: linear-gradient(to bottom, #efe5fd, white);
+  padding-bottom: 5vh;
+  background-color: #efe5fd;
 }
 .widowhood-data .widowhood-data-img {
-  height: 240px;
-  width: 350px;
+  height: 200px;
+  width: 400px;
   border-radius: 20px;
+  object-fit: cover;
 }
 .widowhood-data .widowhood-data-content {
   width: 100vw;
@@ -25,6 +27,11 @@
     height: auto;
     padding: 10px;
   }
+  .widowhood-data .widowhood-data-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
   .widowhood-data .widowhood-stats .widowhood-stats-img {
     width: 100%;
   }

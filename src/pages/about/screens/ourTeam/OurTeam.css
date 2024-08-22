@@ -1,0 +1,31 @@
+.our-team {
+  background-color: #972bb6;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+.our-team .title {
+  color: white;
+}
+.our-team .team-member {
+  margin: 20px;
+}
+.our-team .team-member .role-div {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  min-width: 200px;
+}
+.our-team .team-member h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.our-team .team-member h4 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffde59;
+}
+.our-team .team-member p {
+  color: white;
+  margin: 0;
+}

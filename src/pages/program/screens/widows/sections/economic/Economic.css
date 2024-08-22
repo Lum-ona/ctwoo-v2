@@ -1,0 +1,17 @@
+.economic {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 10vh;
+  height: 100vh;
+  background: linear-gradient(to left, #8932a2, white);
+}
+.economic .container .eco-images img {
+  border: solid #8932a2 2px;
+  width: 200px;
+  max-width: 200px;
+  height: 200px;
+  max-height: 200px;
+}
+.economic .container .title {
+  color: white;
+}

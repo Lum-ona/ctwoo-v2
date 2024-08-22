@@ -1,0 +1,25 @@
+.climate {
+  padding-top: 5vh;
+}
+.climate .title {
+  color: #8932a2;
+}
+
+.climate .climate-images {
+  width: 40vw;
+  height: 40vh;
+  border: solid 2px #8932a2;
+}
+.climate .climate-images .images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.climate .climate-images .col {
+  width: 140px;
+  height: 140px;
+  max-width: 140px;
+  max-height: 140px;
+  border-radius: 50%;
+  border: solid 1px;
+}

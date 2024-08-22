@@ -63,17 +63,14 @@ export default function Header() {
               About
             </div>
             <div className="drop-down">
-              <Link to="/about/our-founder" className="drop-down-option">
+              {/* <Link to="/about/our-founder" className="drop-down-option">
                 Our Founder
-              </Link>
+              </Link> */}
               <Link to="/about/our-board" className="drop-down-option">
                 Our Board
               </Link>
               <Link to="/about/our-team" className="drop-down-option">
                 Our Team
-              </Link>
-              <Link to="/about/reports" className="drop-down-option">
-                Reports
               </Link>
             </div>
           </div>
@@ -84,11 +81,17 @@ export default function Header() {
           >
             <div className="nav-option">Program Directory</div>
             <div className="drop-down">
-              <Link to="/orphan" className="drop-down-option">
-                Orphan
-              </Link>
-              <Link to="/widow-support-program" className="drop-down-option">
+              <Link
+                to="/program-directory/widow-support-program"
+                className="drop-down-option"
+              >
                 Widow Support Program
+              </Link>
+              <Link
+                to="/program-directory/orphans"
+                className="drop-down-option"
+              >
+                Orphans
               </Link>
             </div>
           </div>
@@ -99,20 +102,39 @@ export default function Header() {
           >
             <div className="nav-option">Current Affairs & Updates</div>
             <div className="drop-down">
-              <Link to="/gallery/photos" className="drop-down-option">
-                Photos
+              <Link
+                to={"/current-affairs/gallery"}
+                className="drop-down-option"
+                onMouseEnter={(e) => dropDownMouseIn(e)}
+                onMouseLeave={(e) => dropDownMouseLeave(e)}
+              >
+                Gallery
+                <div className="drop-down-drop-down">
+                  <Link
+                    to="/current-affairs/gallery/photos"
+                    className="drop-down-drop-down-option"
+                  >
+                    Photos
+                  </Link>
+                  <Link
+                    to="/current-affairs/gallery/videos"
+                    className="drop-down-drop-down-option"
+                  >
+                    Videos
+                  </Link>
+                </div>
               </Link>
-              <Link to="/gallery/videos" className="drop-down-option">
-                Videos
+              <Link to="/current-affairs/reports" className="drop-down-option">
+                Reports
               </Link>
             </div>
           </div>
           <Link to="/donate" className="nav-option">
             Donate to Our Cause
           </Link>
-          <Link to="/contact" className="nav-option">
+          {/* <Link to="/contact" className="nav-option">
             Get in Touch
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </div>

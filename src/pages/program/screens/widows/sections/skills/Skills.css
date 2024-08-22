@@ -1,0 +1,8 @@
+.skills {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.skills .skills-images img {
+  height: 70vh;
+  border: solid 1px green;
+}

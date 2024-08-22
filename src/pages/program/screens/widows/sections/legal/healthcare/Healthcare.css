@@ -1,0 +1,23 @@
+.healthcare {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-top: 10vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, white, #8932a2, white);
+}
+.healthcare .container {
+  height: 80vh;
+}
+.healthcare .container .image {
+  border: solid #8932a2 2px;
+  width: 40vw;
+  max-width: 40vw;
+  height: 40vh;
+  max-height: 40vh;
+}
+.healthcare .container .row {
+  height: 100%;
+}
