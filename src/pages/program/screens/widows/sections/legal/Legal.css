@@ -2,25 +2,25 @@
   background-color: #8932a2;
   min-height: 20vh;
   color: white;
-  margin-top: 30vh;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .legal .container .row .images {
-  margin-top: -30vh;
+  margin-top: 3vh;
   position: relative;
   z-index: 12;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.legal .container img {
-  width: 180px;
-  height: 150px;
-  max-width: 180px;
-  max-height: 150px;
-  border: solid 1px green;
+.legal .container .img {
+  width: 240px;
+  height: 180px;
+  border: solid 1px #8932a2;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 992px) {
   .legal .container .row .images {

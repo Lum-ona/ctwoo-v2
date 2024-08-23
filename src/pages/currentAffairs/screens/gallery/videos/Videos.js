@@ -51,14 +51,7 @@ export default function Videos() {
           data-portfolio-sort="original-order"
         >
           <div className="row g-0 portfolio-container">
-            {portfolioContainer()}
-            {portfolioContainer()}
-            {portfolioContainer()}
-            {portfolioContainer()}
-            {portfolioContainer()}
-            {portfolioContainer()}
-            {portfolioContainer()}
-            {portfolioContainer()}
+            <p>No Videos yet</p>
           </div>
         </div>
       </div>

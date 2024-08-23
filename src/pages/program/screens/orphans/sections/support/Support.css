@@ -14,13 +14,12 @@
   justify-content: space-aropund;
 }
 
-.support .support-images .col {
-  width: 140px;
-  height: 140px;
-  max-width: 140px;
-  max-height: 140px;
-  border-radius: 50%;
+.support .support-image {
+  width: 40vw;
+  height: 40vh;
   border: solid 1px;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 992px) {

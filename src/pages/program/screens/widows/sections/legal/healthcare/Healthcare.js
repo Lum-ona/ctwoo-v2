@@ -1,5 +1,7 @@
 import "./Healthcare.css";
 import Title from "../../../../../../../components/titles/Title";
+import img1 from "../../../../../../../assets/img/health/img1.jpeg";
+import img2 from "../../../../../../../assets/img/health/img2.jpeg";
 
 export default function Healthcare() {
   return (
@@ -7,7 +9,10 @@ export default function Healthcare() {
       <div className="container d-flex align-items-center">
         <div className="row">
           <div className="col-lg-6 d-flex flex-column align-items-center justify-content-around">
-            <img className="image" />
+            <div
+              className="col image"
+              style={{ backgroundImage: `url(${img1})` }}
+            ></div>
             <div className="content">
               <p>
                 We also assist widows in forming cooperative groups and
@@ -23,7 +28,10 @@ export default function Healthcare() {
           </div>
           <div className="col-lg-6 d-flex flex-column align-items-center justify-content-between">
             <Title title={"Healthcare Services"} />
-            <img className="image" />
+            <div
+              className="col image"
+              style={{ backgroundImage: `url(${img2})` }}
+            ></div>
             <div className="content">
               <p>
                 Economic independence is crucial for the well-being of widows,

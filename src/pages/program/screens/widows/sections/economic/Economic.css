@@ -5,12 +5,14 @@
   height: 100vh;
   background: linear-gradient(to left, #8932a2, white);
 }
-.economic .container .eco-images img {
+.economic .container .eco-images .img {
   border: solid #8932a2 2px;
   width: 200px;
   max-width: 200px;
   height: 200px;
   max-height: 200px;
+  background-position: center;
+  background-size: cover;
 }
 .economic .container .title {
   color: white;

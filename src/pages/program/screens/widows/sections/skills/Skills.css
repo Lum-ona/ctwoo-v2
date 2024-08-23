@@ -2,7 +2,9 @@
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-.skills .skills-images img {
+.skills .skills-images .image {
   height: 70vh;
-  border: solid 1px green;
+  border: solid 2px #7c2ae8;
+  background-position: center;
+  background-size: cover;
 }

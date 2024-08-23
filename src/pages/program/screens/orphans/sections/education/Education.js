@@ -1,5 +1,7 @@
 import Title from "../../../../../../components/titles/Title";
 import "./Education.css";
+import img1 from "../../../../../../assets/img/education/img1.jpeg";
+import img2 from "../../../../../../assets/img/education/img2.jpeg";
 
 export default function Education() {
   return (
@@ -7,8 +9,14 @@ export default function Education() {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <img className="ed-image" />
-            <img className="ed-image mt-lg-4" />
+            <div
+              style={{ backgroundImage: `url(${img1})` }}
+              className="ed-image"
+            ></div>
+            <div
+              style={{ backgroundImage: `url(${img2})` }}
+              className="ed-image mt-lg-4"
+            ></div>
           </div>
           <div className="col-lg-6">
             <Title title={"Education Sponsorship"} />
@@ -24,7 +32,7 @@ export default function Education() {
                 with educational institutions and government officials help
                 secure additional resources and support for these children.
               </p>
-              <p className="mt-lg-5">
+              <p className="mt-lg-4">
                 CTWOO provides mentoring and academic support to help orphans
                 succeed in their studies. Our dedicated mentors offer guidance,
                 tutoring, and emotional support, fostering a nurturing

@@ -1,5 +1,11 @@
 import Title from "../../../../../../components/titles/Title";
 import "./Psychological.css";
+import img1 from "../../../../../../assets/img/pyschological/img1.jpeg";
+import img2 from "../../../../../../assets/img/pyschological/img2.jpeg";
+import img3 from "../../../../../../assets/img/pyschological/img3.jpeg";
+import img4 from "../../../../../../assets/img/pyschological/img4.jpeg";
+import img5 from "../../../../../../assets/img/pyschological/img5.jpeg";
+import img6 from "../../../../../../assets/img/pyschological/img6.jpeg";
 
 export default function Psychological() {
   return (
@@ -14,20 +20,34 @@ export default function Psychological() {
         <div className="row">
           <div className="images col-lg-6">
             <div className="row">
-              <img className="col" />
-              <img className="col" />
+              <div
+                className="col img"
+                style={{ backgroundImage: `url(${img1})` }}
+              ></div>
+              <div
+                className="col img"
+                style={{ backgroundImage: `url(${img2})` }}
+              ></div>
             </div>
             <div className="row">
-              <img className="col" />
-              <img className="col" />
+              <div
+                className="col img"
+                style={{ backgroundImage: `url(${img3})` }}
+              ></div>
+              <div
+                className="col img"
+                style={{ backgroundImage: `url(${img4})` }}
+              ></div>
             </div>
             <div className="row">
-              <img className="col" />
-              <img className="col" />
-            </div>
-            <div className="row">
-              <img className="col" />
-              <img className="col" />
+              <div
+                className="col img"
+                style={{ backgroundImage: `url(${img5})` }}
+              ></div>
+              <div
+                className="col img"
+                style={{ backgroundImage: `url(${img6})` }}
+              ></div>
             </div>
           </div>
           <div className="col-lg-6 pt-4">

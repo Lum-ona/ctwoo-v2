@@ -1,5 +1,13 @@
 import "./Economic.css";
 import Title from "../../../../../../components/titles/Title";
+import img1 from "../../../../../../assets/img/economic/img1.jpeg";
+import img2 from "../../../../../../assets/img/economic/img2.jpeg";
+import img3 from "../../../../../../assets/img/economic/img3.jpeg";
+import img4 from "../../../../../../assets/img/economic/img4.jpeg";
+import img5 from "../../../../../../assets/img/economic/img5.jpeg";
+import img6 from "../../../../../../assets/img/economic/img6.jpeg";
+import img7 from "../../../../../../assets/img/economic/img7.jpeg";
+import img8 from "../../../../../../assets/img/economic/img8.jpeg";
 
 export default function Economic() {
   return (
@@ -9,12 +17,24 @@ export default function Economic() {
           <div className="col-lg-6 d-flex flex-column align-items-center justify-content-around">
             <div className="eco-images">
               <div className="row">
-                <img className="col" />
-                <img className="col" />
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img1})` }}
+                ></div>
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img2})` }}
+                ></div>
               </div>
               <div className="row">
-                <img className="col" />
-                <img className="col" />
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img3})` }}
+                ></div>
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img4})` }}
+                ></div>
               </div>
             </div>
 
@@ -48,12 +68,24 @@ export default function Economic() {
             </div>
             <div className="eco-images">
               <div className="row">
-                <img className="col" />
-                <img className="col" />
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img5})` }}
+                ></div>
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img6})` }}
+                ></div>
               </div>
               <div className="row">
-                <img className="col" />
-                <img className="col" />
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img7})` }}
+                ></div>
+                <div
+                  className="col img"
+                  style={{ backgroundImage: `url(${img8})` }}
+                ></div>
               </div>
             </div>
           </div>
