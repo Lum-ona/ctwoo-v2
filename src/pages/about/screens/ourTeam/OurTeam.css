@@ -9,6 +9,13 @@
 .our-team .team-member {
   margin: 20px;
 }
+.our-team .team-member img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-color: gray;
+}
 .our-team .team-member .role-div {
   background-color: white;
   border-radius: 20px;

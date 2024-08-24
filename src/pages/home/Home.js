@@ -6,6 +6,7 @@ import WidowhoodData from "./sections/widowhoodData/WidowhoodData";
 import OurStrategy from "./sections/ourStrategy/OurStrategy";
 import Highlights from "./sections/highlights/Highlights";
 import AnnualEvents from "./sections/annualEvents/AnnualEvents";
+import Said from "./sections/said/Said";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Highlights />
       <OurProgress />
       <AnnualEvents />
+      <Said />
     </div>
   );
 }

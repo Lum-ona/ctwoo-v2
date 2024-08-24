@@ -1,24 +1,29 @@
 import "./OurBoard.css";
 import Title from "../../../../components/titles/Title";
+import diana from "../../../../assets/img/board/diana.jpeg";
+import faith from "../../../../assets/img/board/faith.jpeg";
+import nkatha from "../../../../assets/img/board/nkatha.jpeg";
+import raphael from "../../../../assets/img/board/raphael.jpeg";
+import peter from "../../../../assets/img/board/peter.jpeg";
 
 export default function OurBoard() {
   const boards = [
     {
-      img: "",
+      img: diana,
       name: "Dr. Dianah Kamande HSC",
       role: "FOUNDER & EXECUTIVE DIRECTOR",
       profile:
         "rovide guidance, support, and direction to the team, fostering collaboration and ensuring project goals are achieved.",
     },
     {
-      img: "",
+      img: peter,
       name: "Mr. Peter Nyagah",
       role: "CHAIRPERSON",
       profile:
         "He holds a Bachelor of Arts in Business and Procurement from Presbyterian University and is the Executive Director and Founder of Certified Homes Limited. His extensive experience in business management and procurement has significantly enhanced the mission of Come Together Widows and Orphans Organization (CTWOO) to support widows and orphans in Kenya.",
     },
     {
-      img: "",
+      img: nkatha,
       name: "MS. Nkatha Mwenda",
       role: "SECRETARY & BOARD MEMBER",
       profile:
@@ -32,14 +37,14 @@ export default function OurBoard() {
         "Rashid Ali Omar is Former the Deputy chief kadhi of the republic of kenya. He Holds PhD in (Sociology) from Mount Kenya University, MA (Social Development and Management) from Maseno University, BA (Islamic Sharia) from Islamic University of Madina. He is also certified mediator from (MTI) with over 24 Years experience in dispute resolution, application of Islamic law in all contentious and non- contentious matters.",
     },
     {
-      img: "",
+      img: faith,
       name: "Ms. Faith Owiyo ",
       role: "BOARD MEMBER",
       profile:
         "Ms. Faith Owiyo is a passionate advocate for gender equality, youth voice, and social justice. Currently pursuing her Master of Arts in Gender and Development Studies at the University of Nairobi, she holds a Bachelor’s Degree in the same field from Kenyatta University. As a Probation Officer in Kenya’s justice system, Faith brings compassion to matters of justice and equity",
     },
     {
-      img: "",
+      img: raphael,
       name: "Raphael Okwama ",
       role: "BOARD MEMBER",
       profile:
@@ -58,7 +63,7 @@ export default function OurBoard() {
     <div className="our-board">
       <div className="container">
         <div className="row d-flex justify-content-between">
-          <div className="col-lg-2 d-flex justify-content-center">
+          <div className="col-lg-2 d-flex align-items-center mb-4">
             <Title title={"Our Board"} />
           </div>
           <div className="col-lg-10">

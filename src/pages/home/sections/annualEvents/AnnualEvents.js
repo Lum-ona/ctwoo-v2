@@ -19,7 +19,7 @@ export default function AnnualEvents() {
       <Title title={"Our Main Annual Events"} />
       <div className="container">
         <div className="row d-flex justify-content-between align-items-start">
-          <div className="col-lg-3">
+          <div className="event col-lg-3">
             <div className="images">
               <div className="row">
                 <img alt="ctwoo event" className="col event-img" src={val1} />
@@ -45,7 +45,7 @@ export default function AnnualEvents() {
               <div className="btn">learn more</div>
             </div>
           </div>
-          <div className="col-lg-3 d-flex flex-column justify-content-between">
+          <div className="event col-lg-3 d-flex flex-column justify-content-between">
             <div className="images">
               <div className="row">
                 <img alt="ctwoo event" className="col event-img" src={int1} />
@@ -70,7 +70,7 @@ export default function AnnualEvents() {
               <div className="btn">learn more</div>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="event col-lg-3">
             <div className="images">
               <div className="row">
                 <img alt="ctwoo event" className="col event-img" src={day1} />

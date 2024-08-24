@@ -4,33 +4,45 @@ import "./Donate.css";
 export default function Donate() {
   return (
     <div className="donate">
+      <div className="donate-bg-image"></div>
       <div className="container">
-        <div className="content">
-          <h2>Empower Widows and Orphans - Support Our Cause!</h2>
-
-          <div className="why-donate">
-            <h5>1. Sponsor a house for a widow</h5>
-            <h5>2. Buy a school uniform for a widow’s child</h5>
-            <h5>3. Pay for boarding school fees for a year for one child</h5>
+        <div className="row">
+          <div className="action-call col-lg-4">
+            <h2>Empower Widows & Orphans </h2>
+            <h3>Support Our Cause! </h3>
+            <div>Donate Now</div>
           </div>
-          <div className="payment-methods">
-            <div className="method payment-1">
-              <h2>Bank</h2>
-              <h3>COOPERATIVE BANK</h3>
-              <h3>BRANK: Thika Road Mall</h3>
-              <h3>KES ACCOUNT NO: 01128576645800</h3>
-              <h3>USD ACCOUNT NO: 02120576645800</h3>
-              <h3>SWIFT CODE: KCOOKENA</h3>
+          <div className="col-lg-8 donate-methods">
+            <div className="donate-method">
+              <h2>COOPERATIVE BANK</h2>
+              <p>BRANCH: Thika Road Mall</p>
+              <p>
+                KES ACCOUNT NO: <span>01128576645800</span>
+              </p>
+              <p>
+                USD ACCOUNT NO:<span> 02120576645800</span>
+              </p>
+              <p>
+                SWIFT CODE: <span>KCOOKENA</span>
+              </p>
             </div>
-            <div className="method payment-2">
-              <h2>Mpesa</h2>
-              <h3>PAYBILL: 4029363</h3>
-              <h3>TILL NO: 669655</h3>
-              <h3>PHONE NO: 0758401775</h3>
+            <div className="donate-method">
+              <h2>MPESA</h2>
+              <p>
+                PAYBILL: <span>4029363</span>
+              </p>
+              <p>
+                TILL NO: <span>669655</span>
+              </p>
+              <p>
+                PHONE NO: <span>0758401775</span>
+              </p>
             </div>
-            <div className="method payment-3">
-              <h2>Paypal: </h2>
-              <h3>INFO@COMETOGEWOO.ORG</h3>
+            <div className="donate-method">
+              <h2>PAYPAL</h2>
+              <p>
+                <span>INFO@COMETOGEWOO.ORG</span>
+              </p>
             </div>
           </div>
         </div>

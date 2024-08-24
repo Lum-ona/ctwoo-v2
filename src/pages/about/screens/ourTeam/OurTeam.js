@@ -1,10 +1,19 @@
 import "./OurTeam.css";
 import Title from "../../../../components/titles/Title";
 
+import christine from "../../../../assets/img/team/christine.jpeg";
+import delvine from "../../../../assets/img/team/delvine.jpeg";
+import florence from "../../../../assets/img/team/florence.jpeg";
+import george from "../../../../assets/img/team/george.jpeg";
+import beth from "../../../../assets/img/team/beth.jpeg";
+import sheryl from "../../../../assets/img/team/cheryl.jpeg";
+import peter from "../../../../assets/img/team/peter.jpeg";
+import alex from "../../../../assets/img/team/alex.jpeg";
+
 export default function OurTeam() {
   const teams = [
     {
-      img: "",
+      img: sheryl,
       role: "Programs Manager ",
       name: "Sheryl Otieno ",
       profile:
@@ -25,7 +34,7 @@ export default function OurTeam() {
         "She is currently pursuing a degree in Gender and Development at Kenyatta University. Praise is dedicated to leveraging technology to address Gender-Based Violence among the youths, contributing to the empowerment and protection of Orphans and Widows children.",
     },
     {
-      img: "",
+      img: george,
       role: "communications",
       name: "George Munala",
       profile:
@@ -74,39 +83,58 @@ export default function OurTeam() {
         "He holds a BCOM degree in Finance and boasts a range of certifications in mediation, leadership, and program management.",
     },
     {
-      img: "",
+      img: delvine,
       role: "Chief Editor",
       name: "Delvine Awuor",
       profile:
         "She holds a Bachelor of Arts in Development Studies from Maseno University and a Diploma in Procurement and Supply Chain Management from Meru National Polytechnic.",
     },
     {
-      img: "",
+      img: peter,
       role: "Project Field Officer",
       name: " Peter Musau",
       profile:
         "Peter Musau is a dedicated and results-oriented professional holding a Bachelor of Science in Community Development from Chuka University. With a robust background spanning over three years",
     },
     {
-      img: "",
+      img: beth,
       role: "Project Field Officer - ",
       name: "Beth Mburu",
       profile:
         "Backed by a Bachelor's degree in Community Development from Chuka University, she has added a solid foundation of knowledge to her duties and responsibilities. Her academic background supplements her hands-on experience.",
     },
     {
-      img: "",
+      img: alex,
       role: "Media Personnel",
       name: "Alex Kiogora",
       profile:
         "Diploma in Communication and Media Studies from Zetech University. He is a creative media professional with over three years of experience in photography, videography, graphic design, and editing.",
     },
     {
-      img: "",
+      img: christine,
       role: "Project Field Officer-",
       name: " Betty Christine Nkatha",
       profile:
         "She holds a diploma in Community Development and Social Work from Chuka University. Her hands-on approach and deep understanding of community needs make her an invaluable asset in driving social and economic transformation.",
+    },
+    {
+      img: "",
+      role: "Team Leader",
+      name: "Ketut Susilo",
+      profile: "Has been with the industry for two decades @reallygreatsite",
+    },
+    {
+      img: "",
+      role: "Finance Manager -",
+      name: " Mr. Joshua Moganda",
+      profile:
+        "He owns a degree in Bachelor of commerce (finance) from Kenyatta University which solidifies his experience and equips him with required knowledge to work. He has strong communication skills, team work and good time and financial management skills that makes him pursue his duties and responsibilities effectively.",
+    },
+    {
+      img: "",
+      role: "Senior Publisher",
+      name: "Chiaki Satoa",
+      profile: "Has a master's degree in Fine Arts @reallygreatsite",
     },
   ];
   return (

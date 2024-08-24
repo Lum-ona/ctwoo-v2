@@ -29,7 +29,7 @@ export default function Highlights() {
     },
     {
       title: "PARALEGAL TRAINING",
-      img: img5,
+      img: img6,
       content:
         "CTWOO has embraced paralegal training for widows, training them as Trainers of Trainers to address the alarming issue of widow’s rights violations. We have graduated our widows in Nairobi, Kiambu, Nyeri and Meru as advocates of their own rights through our paralegal training program. Through this they are able to speak up whenever their rights are violated.",
     },
@@ -41,7 +41,7 @@ export default function Highlights() {
     },
     {
       title: "PUSHING FOR WIDOWS MANUAL ON ECONOMIC EMPOWERMENT",
-      img: img6,
+      img: img5,
       content:
         "CTWOO actively engages in deliberations with various stakeholders who assist in the formulation of policies for widowed persons. CTWOO is currently developing a manual on economic empowerment for widows in collaboration with the President's Advisor on Women's Rights, Hon. Harriet Chiggai",
     },

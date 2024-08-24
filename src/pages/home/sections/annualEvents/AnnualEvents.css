@@ -2,20 +2,23 @@
   margin-top: 5vh;
   margin-bottom: 10vh;
 }
+.annual-events .event {
+  width: 31%;
+}
 .annual-events .images {
   border-radius: 10px;
   overflow: hidden;
 }
 
 .annual-events .event-img {
-  height: 100px;
+  height: 130px;
   width: inherit;
   border: solid 1px #7c2ae8;
   object-fit: cover;
   padding: 0;
 }
 .annual-events .container .event-content {
-  min-height: 50vh;
+  min-height: 45vh;
 }
 
 .annual-events .event-title {
