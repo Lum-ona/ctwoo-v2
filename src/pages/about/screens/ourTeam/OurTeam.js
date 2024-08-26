@@ -119,22 +119,10 @@ export default function OurTeam() {
     },
     {
       img: "",
-      role: "Team Leader",
-      name: "Ketut Susilo",
-      profile: "Has been with the industry for two decades @reallygreatsite",
-    },
-    {
-      img: "",
       role: "Finance Manager -",
       name: " Mr. Joshua Moganda",
       profile:
         "He owns a degree in Bachelor of commerce (finance) from Kenyatta University which solidifies his experience and equips him with required knowledge to work. He has strong communication skills, team work and good time and financial management skills that makes him pursue his duties and responsibilities effectively.",
-    },
-    {
-      img: "",
-      role: "Senior Publisher",
-      name: "Chiaki Satoa",
-      profile: "Has a master's degree in Fine Arts @reallygreatsite",
     },
   ];
   return (

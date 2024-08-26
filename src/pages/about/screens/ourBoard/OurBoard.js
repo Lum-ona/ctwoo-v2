@@ -6,6 +6,7 @@ import faith from "../../../../assets/img/board/faith.jpeg";
 import nkatha from "../../../../assets/img/board/nkatha.jpeg";
 import raphael from "../../../../assets/img/board/raphael.jpeg";
 import peter from "../../../../assets/img/board/peter.jpeg";
+import rashid from "../../../../assets/img/board/rashid.jpeg";
 import EastIcon from "@mui/icons-material/East";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
@@ -35,7 +36,7 @@ export default function OurBoard() {
         "Nkatha Mwenda is a nutritionist with 15 plus years of experience and a NACADA Trained RecoveryCoach.She holds a Bachelor of Science Degree in Food, Nutrition and Dietetics from Kenyatta University, a Certificate of Proficiency from the College of Insurance ",
     },
     {
-      img: "",
+      img: rashid,
       name: "Dr. Rashid Ali Omar, PHD",
       role: "BOARD MEMBER",
       profile:
@@ -71,58 +72,56 @@ export default function OurBoard() {
 
   return (
     <div
-      className="our-board"
+      className={`our-board   ${showSecond ? "show-second" : ""}`}
       style={showSecond ? { backgroundColor: "#ededed" } : {}}
     >
-      <div className={`container ${showSecond ? "show-second" : ""}`}>
-        <div className="board-title col-lg-2 mb-4">
-          <div className="board-button" onClick={handleButtonClick}>
-            {showSecond ? (
-              <KeyboardBackspaceIcon className="icon" />
-            ) : (
-              <EastIcon className="icon" />
-            )}
-          </div>
-          <Title title={"Our Board"} />
+      <div className="board-title col-lg-2 mb-4">
+        <div className="board-button" onClick={handleButtonClick}>
+          {showSecond ? (
+            <KeyboardBackspaceIcon className="icon" />
+          ) : (
+            <EastIcon className="icon" />
+          )}
         </div>
-        <div className="first col-lg-10 ">
-          <div className="d-flex flex-wrap  h-100  justify-content-between">
-            {boards.map((item, index) => (
-              <div
-                className="board-member d-flex align-items-center flex-column text-center"
-                key={index}
-                onMouseEnter={dropDownMouseIn}
-                onMouseLeave={dropDownMouseLeave}
-              >
-                <div>
-                  <img src={item.img} alt={`${item.name}`} />
-                  <h3>{item.name}</h3>
-                  <h4>{item.role}</h4>
-                </div>
+        <Title title={"Our Board"} />
+      </div>
+      <div className="first col-lg-10 ">
+        <div className="d-flex flex-wrap  h-100  justify-content-between">
+          {boards.map((item, index) => (
+            <div
+              className="board-member d-flex align-items-center flex-column text-center"
+              key={index}
+              onMouseEnter={dropDownMouseIn}
+              onMouseLeave={dropDownMouseLeave}
+            >
+              <div>
+                <img src={item.img} alt={`${item.name}`} />
+                <h3>{item.name}</h3>
+                <h4>{item.role}</h4>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-        <div className="second col-lg-10 h-100 mt-4">
-          <Title title={"Profile"} />
-          <div className="d-flex flex-wrap justify-content-between">
-            {boards.map((item, index) => (
-              <div
-                className="board-member d-flex align-items-center flex-column text-center"
-                key={index}
-                onMouseEnter={dropDownMouseIn}
-                onMouseLeave={dropDownMouseLeave}
-              >
-                <div>
-                  <h3>{item.name}</h3>
-                  <h4>{item.role}</h4>
-                </div>
-                <div className="board-profile">
-                  <p>{item.profile}</p>
-                </div>
+      </div>
+      <div className="second col-lg-10 h-100 mt-4">
+        <Title title={"Profile"} />
+        <div className="d-flex flex-wrap justify-content-between">
+          {boards.map((item, index) => (
+            <div
+              className="board-member d-flex align-items-center flex-column text-center"
+              key={index}
+              onMouseEnter={dropDownMouseIn}
+              onMouseLeave={dropDownMouseLeave}
+            >
+              <div>
+                <h3>{item.name}</h3>
+                <h4>{item.role}</h4>
               </div>
-            ))}
-          </div>
+              <div className="board-profile">
+                <p>{item.profile}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
