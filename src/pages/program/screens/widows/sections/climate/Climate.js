@@ -17,8 +17,8 @@ export default function Climate() {
   return (
     <div className="climate">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-6">
+        <div className="row ">
+          <div className="climate-content col-lg-6 d-flex flex-column align-items-center">
             <Title title="Emergency Relief" />
             <div className="climate-images">
               <div className="images row mt-1">
@@ -68,7 +68,7 @@ export default function Climate() {
               </p>
             </div>
           </div>
-          <div className="col-lg-6 ">
+          <div className="climate-content col-lg-6 d-flex flex-column align-items-center">
             <Title title="Climate Action Response" />
             <div className="climate-images">
               <div className="images row mt-1">

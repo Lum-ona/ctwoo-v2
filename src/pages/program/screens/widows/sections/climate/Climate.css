@@ -4,9 +4,15 @@
 .climate .title {
   color: #8932a2;
 }
-
+.climate .row {
+  display: flex;
+  justify-content: space-between;
+}
+.climate .climate-content {
+  width: 45vw;
+}
 .climate .climate-images {
-  width: 40vw;
+  width: 90%;
   height: 40vh;
   border: solid 2px #8932a2;
 }
@@ -28,6 +34,12 @@
   border: solid 1px;
 }
 @media (max-width: 992px) {
+  .climate .row {
+    flex-direction: column;
+  }
+  .climate .climate-content {
+    width: 95vw;
+  }
   .climate .climate-images {
     width: 95vw;
     height: 40vh;

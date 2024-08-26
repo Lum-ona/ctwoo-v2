@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./OurBoard.css";
 import Title from "../../../../components/titles/Title";
 import diana from "../../../../assets/img/board/diana.jpeg";
@@ -5,15 +6,19 @@ import faith from "../../../../assets/img/board/faith.jpeg";
 import nkatha from "../../../../assets/img/board/nkatha.jpeg";
 import raphael from "../../../../assets/img/board/raphael.jpeg";
 import peter from "../../../../assets/img/board/peter.jpeg";
+import EastIcon from "@mui/icons-material/East";
+import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
 export default function OurBoard() {
+  const [showSecond, setShowSecond] = useState(false);
+
   const boards = [
     {
       img: diana,
       name: "Dr. Dianah Kamande HSC",
       role: "FOUNDER & EXECUTIVE DIRECTOR",
       profile:
-        "rovide guidance, support, and direction to the team, fostering collaboration and ensuring project goals are achieved.",
+        "Provide guidance, support, and direction to the team, fostering collaboration and ensuring project goals are achieved.",
     },
     {
       img: peter,
@@ -59,31 +64,64 @@ export default function OurBoard() {
   const dropDownMouseLeave = (e) => {
     e.currentTarget.classList.remove("hovered");
   };
+
+  const handleButtonClick = () => {
+    setShowSecond(!showSecond); // Toggle between true and false
+  };
+
   return (
-    <div className="our-board">
-      <div className="container">
-        <div className="row d-flex justify-content-between">
-          <div className="col-lg-2 d-flex align-items-center mb-4">
-            <Title title={"Our Board"} />
+    <div
+      className="our-board"
+      style={showSecond ? { backgroundColor: "#ededed" } : {}}
+    >
+      <div className={`container ${showSecond ? "show-second" : ""}`}>
+        <div className="board-title col-lg-2 mb-4">
+          <div className="board-button" onClick={handleButtonClick}>
+            {showSecond ? (
+              <KeyboardBackspaceIcon className="icon" />
+            ) : (
+              <EastIcon className="icon" />
+            )}
           </div>
-          <div className="col-lg-10">
-            <div className="d-flex flex-wrap justify-content-between">
-              {boards.map((item, index) => (
-                <div
-                  className="board-member d-flex align-items-center flex-column text-center"
-                  key={index}
-                  onMouseEnter={(e) => dropDownMouseIn(e)}
-                  onMouseLeave={(e) => dropDownMouseLeave(e)}
-                >
+          <Title title={"Our Board"} />
+        </div>
+        <div className="first col-lg-10 ">
+          <div className="d-flex flex-wrap  h-100  justify-content-between">
+            {boards.map((item, index) => (
+              <div
+                className="board-member d-flex align-items-center flex-column text-center"
+                key={index}
+                onMouseEnter={dropDownMouseIn}
+                onMouseLeave={dropDownMouseLeave}
+              >
+                <div>
                   <img src={item.img} alt={`${item.name}`} />
                   <h3>{item.name}</h3>
                   <h4>{item.role}</h4>
-                  <div className="board-profile">
-                    <p>{item.profile}</p>
-                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="second col-lg-10 h-100 mt-4">
+          <Title title={"Profile"} />
+          <div className="d-flex flex-wrap justify-content-between">
+            {boards.map((item, index) => (
+              <div
+                className="board-member d-flex align-items-center flex-column text-center"
+                key={index}
+                onMouseEnter={dropDownMouseIn}
+                onMouseLeave={dropDownMouseLeave}
+              >
+                <div>
+                  <h3>{item.name}</h3>
+                  <h4>{item.role}</h4>
+                </div>
+                <div className="board-profile">
+                  <p>{item.profile}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
