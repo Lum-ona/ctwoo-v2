@@ -17,19 +17,21 @@
 }
 .reports .container .report-card {
   width: 20vw;
-  height: 40vh;
+  min-height: 40vh;
   box-shadow: 0px 0px 10px #5902ab;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   font-weight: 500;
   text-decoration: none;
   color: #5902ab;
   transition: 0.4s;
+  margin-top: 4vh;
 }
 .reports .container .report-card .image {
-  height: 70%;
+  height: 28vh;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -40,6 +42,7 @@
   justify-content: center;
   text-align: center;
   height: 30%;
+  padding: 10px;
 }
 .reports .container .report-card:hover {
   transform: scale(1.05);

@@ -13,6 +13,10 @@ import day2 from "../../../../assets/img/events/16/img2.jpeg";
 import day3 from "../../../../assets/img/events/16/img3.jpeg";
 import day4 from "../../../../assets/img/events/16/img4.jpeg";
 
+import valDoc from "../../../../assets/documents/events/doc1.pdf";
+import intDoc from "../../../../assets/documents/events/doc2.pdf";
+import dayDoc from "../../../../assets/documents/events/doc3.pdf";
+
 export default function AnnualEvents() {
   return (
     <div className="annual-events">
@@ -42,7 +46,14 @@ export default function AnnualEvents() {
                 supporting widows in line with Economic, Social and Legal
                 aspects.
               </p>
-              <div className="btn">learn more</div>
+              <a
+                href={valDoc}
+                target={"_blank"}
+                rel="noreferrer"
+                className="btn"
+              >
+                learn more
+              </a>
             </div>
           </div>
           <div className="event col-lg-3 d-flex flex-column justify-content-between">
@@ -67,7 +78,14 @@ export default function AnnualEvents() {
                 celebrations have provided a platform for empowering widows both
                 economically and legally.{" "}
               </p>
-              <div className="btn">learn more</div>
+              <a
+                href={intDoc}
+                target={"_blank"}
+                rel="noreferrer"
+                className="btn"
+              >
+                learn more
+              </a>
             </div>
           </div>
           <div className="event col-lg-3">
@@ -93,7 +111,14 @@ export default function AnnualEvents() {
                 ourselves to advocating for survivors' rights, challenging
                 harmful cultural practices, and promoting systemic change.{" "}
               </p>
-              <div className="btn">learn more</div>
+              <a
+                href={dayDoc}
+                target={"_blank"}
+                rel="noreferrer"
+                className="btn"
+              >
+                learn more
+              </a>
             </div>
           </div>
         </div>
