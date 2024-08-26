@@ -9,12 +9,12 @@
   justify-content: space-between;
 }
 .climate .climate-content {
-  width: 45vw;
+  /* width: 45vw; */
 }
 .climate .climate-images {
   width: 90%;
   height: 40vh;
-  border: solid 2px #8932a2;
+  /* border: solid 2px #8932a2; */
 }
 .climate .climate-images .images {
   display: flex;
@@ -23,14 +23,9 @@
 .climate .climate-images .images .image {
   background-position: center;
   background-size: cover;
-}
-
-.climate .climate-images .col {
-  width: 140px;
-  height: 140px;
-  max-width: 140px;
-  max-height: 140px;
-  border-radius: 50%;
+  width: 33%;
+  height: 20vh;
+  min-height: 20vh;
   border: solid 1px;
 }
 @media (max-width: 992px) {

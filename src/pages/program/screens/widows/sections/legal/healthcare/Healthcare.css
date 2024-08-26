@@ -27,6 +27,9 @@
   .healthcare {
     height: auto;
   }
+  .healthcare .title h2 {
+    color: #f3f3f3;
+  }
   .healthcare .container .image {
     width: 90vw;
   }

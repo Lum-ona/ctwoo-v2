@@ -21,7 +21,7 @@ export default function Climate() {
           <div className="climate-content col-lg-6 d-flex flex-column align-items-center">
             <Title title="Emergency Relief" />
             <div className="climate-images">
-              <div className="images row mt-1">
+              <div className="images ">
                 <div
                   className="col image"
                   style={{ backgroundImage: `url(${img1})` }}
@@ -35,7 +35,7 @@ export default function Climate() {
                   style={{ backgroundImage: `url(${img3})` }}
                 ></div>
               </div>
-              <div className="images row mt-3">
+              <div className="images">
                 <div
                   className="col image"
                   style={{ backgroundImage: `url(${img4})` }}
@@ -71,7 +71,7 @@ export default function Climate() {
           <div className="climate-content col-lg-6 d-flex flex-column align-items-center">
             <Title title="Climate Action Response" />
             <div className="climate-images">
-              <div className="images row mt-1">
+              <div className="images">
                 <div
                   className="col image"
                   style={{ backgroundImage: `url(${img7})` }}
@@ -85,7 +85,7 @@ export default function Climate() {
                   style={{ backgroundImage: `url(${img9})` }}
                 ></div>
               </div>
-              <div className="images row mt-3">
+              <div className="images">
                 <div
                   className="col image"
                   style={{ backgroundImage: `url(${img10})` }}
