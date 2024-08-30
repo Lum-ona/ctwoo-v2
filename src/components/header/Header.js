@@ -1,11 +1,52 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Header.css";
-import logo from "../../assets/img/CTWOO.png";
-import { Link, useNavigate } from "react-router-dom";
+import logo from "../../assets/img/CTWOO2.png";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const homeRef = useRef();
+  const aboutRef = useRef();
+  const programRef = useRef();
+  const currentRef = useRef();
+  const donateRef = useRef();
+
+  useEffect(() => {
+    if (pathname.split("/").includes("about")) {
+      aboutRef.current.classList.add("active");
+      homeRef.current.classList.remove("active");
+      programRef.current.classList.remove("active");
+      currentRef.current.classList.remove("active");
+      donateRef.current.classList.remove("active");
+    } else if (pathname.split("/").includes("program-directory")) {
+      programRef.current.classList.add("active");
+      homeRef.current.classList.remove("active");
+      currentRef.current.classList.remove("active");
+      donateRef.current.classList.remove("active");
+      aboutRef.current.classList.remove("active");
+    } else if (pathname.split("/").includes("current-affairs")) {
+      currentRef.current.classList.add("active");
+      homeRef.current.classList.remove("active");
+      programRef.current.classList.remove("active");
+      donateRef.current.classList.remove("active");
+      aboutRef.current.classList.remove("active");
+    } else if (pathname.split("/").includes("donate")) {
+      donateRef.current.classList.add("active");
+      currentRef.current.classList.remove("active");
+      homeRef.current.classList.remove("active");
+      programRef.current.classList.remove("active");
+      aboutRef.current.classList.remove("active");
+    } else {
+      homeRef.current.classList.add("active");
+      programRef.current.classList.remove("active");
+      currentRef.current.classList.remove("active");
+      donateRef.current.classList.remove("active");
+      aboutRef.current.classList.remove("active");
+    }
+  }, [pathname]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -48,7 +89,7 @@ export default function Header() {
           <span className={`icon-bar ${isMobileMenuOpen ? "open" : ""}`}></span>
         </div>
         <nav className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`}>
-          <Link to="/" className="nav-option">
+          <Link to="/" className="nav-option" ref={homeRef}>
             Home
           </Link>
           <div
@@ -58,7 +99,10 @@ export default function Header() {
           >
             <div
               className="nav-option"
+              ref={aboutRef}
               onClick={() => scrollToSection("about-us")}
+              onMouseEnter={(e) => dropDownMouseIn(e)}
+              onMouseLeave={(e) => dropDownMouseLeave(e)}
             >
               About
             </div>
@@ -69,8 +113,21 @@ export default function Header() {
               <Link to="/about/our-board" className="drop-down-option">
                 Our Board
               </Link>
-              <Link to="/about/our-team" className="drop-down-option">
+              <Link
+                to="/about/our-team"
+                className="drop-down-option"
+                onMouseEnter={(e) => dropDownMouseIn(e)}
+                onMouseLeave={(e) => dropDownMouseLeave(e)}
+              >
                 Our Team
+                <div className="drop-down-drop-down">
+                  <Link
+                    to="/about/our-interns"
+                    className="drop-down-drop-down-option"
+                  >
+                    Our Interns
+                  </Link>
+                </div>
               </Link>
             </div>
           </div>
@@ -79,7 +136,9 @@ export default function Header() {
             onMouseEnter={(e) => dropDownMouseIn(e)}
             onMouseLeave={(e) => dropDownMouseLeave(e)}
           >
-            <div className="nav-option">Program Directory</div>
+            <div className="nav-option" ref={programRef}>
+              Program Directory
+            </div>
             <div className="drop-down">
               <Link
                 to="/program-directory/widow-support-program"
@@ -91,7 +150,7 @@ export default function Header() {
                 to="/program-directory/orphans"
                 className="drop-down-option"
               >
-                Orphans
+                Orphans and vulnerable children
               </Link>
             </div>
           </div>
@@ -100,7 +159,9 @@ export default function Header() {
             onMouseEnter={(e) => dropDownMouseIn(e)}
             onMouseLeave={(e) => dropDownMouseLeave(e)}
           >
-            <div className="nav-option">Current Affairs & Updates</div>
+            <div className="nav-option" ref={currentRef}>
+              Current Affairs & Updates
+            </div>
             <div className="drop-down">
               <Link
                 to={"/current-affairs/gallery"}
@@ -129,7 +190,7 @@ export default function Header() {
               </Link>
             </div>
           </div>
-          <Link to="/donate" className="nav-option">
+          <Link to="/donate" className="nav-option" ref={donateRef}>
             Donate to Our Cause
           </Link>
           {/* <Link to="/contact" className="nav-option">

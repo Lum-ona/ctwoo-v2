@@ -33,7 +33,7 @@ export default function OurStrategy() {
               programs that inspire widows to advocate for their rights and take
               on leadership roles within their communities.
             </p>
-            <img alt="advocate" className="our-strategy-img" src={img1} />
+            <img alt="advocate" className="our-strategy-img" src={img3} />
           </div>
           <div className="empower col-lg-3">
             <h2>EMPOWER</h2>
@@ -44,7 +44,7 @@ export default function OurStrategy() {
               empowering widows to assert their rights and actively participate
               in policy-making processes that affect their lives.
             </p>
-            <img alt="advocate" className="our-strategy-img" src={img3} />
+            <img alt="advocate" className="our-strategy-img" src={img1} />
           </div>
         </div>
       </div>

@@ -1,14 +1,26 @@
-import img1 from "../../../../../assets/img/highlights/food.jpeg";
 import "./Videos.css";
+import vid1 from "../../../../../assets/vid/vid1.mp4";
+import vid2 from "../../../../../assets/vid/vid2.mp4";
+import vid3 from "../../../../../assets/vid/vid3.mp4";
+import vid4 from "../../../../../assets/vid/vid4.mp4";
+import vid5 from "../../../../../assets/vid/vid5.mp4";
+import vid6 from "../../../../../assets/vid/vid6.mp4";
 
 export default function Videos() {
-  const portfolioContainer = () => (
-    <div className="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-ah">
-      <img
+  const videos = [vid1, vid2, vid3, vid4, vid5, vid6];
+  const portfolioContainer = ({ vid, keyIndex }) => (
+    <div
+      key={keyIndex}
+      className="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-ah"
+    >
+      {/* <img
         src={img1}
         className="img-fluid"
         alt="Antelop - Alphabet Series - WildNow Foundation"
-      />
+      /> */}
+      <video controls>
+        <source src={vid} />
+      </video>
       <h1
         style={{
           color: "rgba(255, 255, 255, 0.787)",
@@ -42,7 +54,7 @@ export default function Videos() {
     </div>
   );
   return (
-    <div className="portfolio">
+    <div className="video-gallery">
       <div className="container-fluid" data-aos="fade-up" data-aos-delay="200">
         <div
           className="portfolio-isotope "
@@ -51,7 +63,9 @@ export default function Videos() {
           data-portfolio-sort="original-order"
         >
           <div className="row g-0 portfolio-container">
-            <p>No Videos yet</p>
+            {videos.map((item, index) =>
+              portfolioContainer({ vid: item, keyIndex: index })
+            )}
           </div>
         </div>
       </div>

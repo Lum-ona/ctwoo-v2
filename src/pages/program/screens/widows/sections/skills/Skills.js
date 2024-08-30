@@ -44,6 +44,16 @@ export default function Skills() {
                 style={{ backgroundImage: `url(${img2})` }}
               ></div>
             </div>
+            <div className="row skills-images">
+              <div
+                className="col image"
+                style={{ backgroundImage: `url(${img1})` }}
+              ></div>
+              <div
+                className="col image"
+                style={{ backgroundImage: `url(${img2})` }}
+              ></div>
+            </div>
           </div>
         </div>
       </div>

@@ -20,6 +20,9 @@
   margin-bottom: 5vh;
   cursor: pointer;
 }
+.footer .footer-content .footer-social a {
+  text-decoration: none;
+}
 .footer .footer-bottom .credits {
   margin-left: 5px;
   font-size: 14px;

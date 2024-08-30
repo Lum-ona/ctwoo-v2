@@ -104,6 +104,11 @@
   font-size: 22px;
   font-weight: 600;
 }
+.our-board .second .board-member {
+  box-shadow: 0px 0px 5px #d3d3d3;
+  padding: 20px;
+  border-radius: 10px;
+}
 .our-board .second .board-member h3 {
   color: #cb6de6;
 }

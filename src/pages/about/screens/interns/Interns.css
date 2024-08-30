@@ -1,0 +1,38 @@
+.our-intern {
+  background-color: #972bb6;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+.our-intern .title {
+  color: white;
+}
+.our-intern .intern-member {
+  margin: 20px;
+}
+.our-intern .intern-member img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  background-color: gray;
+}
+.our-intern .intern-member .role-div {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  min-width: 200px;
+}
+.our-intern .intern-member h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.our-intern .intern-member h4 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffde59;
+}
+.our-intern .intern-member p {
+  color: white;
+  margin: 0;
+}

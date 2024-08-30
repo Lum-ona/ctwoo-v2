@@ -114,6 +114,8 @@ export default function OurBoard() {
               onMouseLeave={dropDownMouseLeave}
             >
               <div>
+                <img src={item.img} alt={`${item.name}`} />
+
                 <h3>{item.name}</h3>
                 <h4>{item.role}</h4>
               </div>

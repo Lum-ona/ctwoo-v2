@@ -38,31 +38,8 @@ export default function Footer() {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <FacebookIcon />
+                <FacebookIcon /> Facebook
               </a>
-              Facebook
-            </div>
-
-            <div className="footer-social">
-              <a
-                href="https://www.facebook.com/cometogetherwidowsandorphans?mibextid=ZbWKwL"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <InstagramIcon />
-              </a>
-              Instagram
-            </div>
-
-            <div className="footer-social">
-              <a
-                href="https://twitter.com/Cometogether_Wi?t=nrNaPO8apLmPUSaFENY-Ew&s=08"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <TwitterIcon />
-              </a>
-              Twitter
             </div>
 
             <div className="footer-social">
@@ -71,10 +48,30 @@ export default function Footer() {
                 target={"_blank"}
                 rel="noreferrer"
               >
-                <LinkedInIcon />
+                <InstagramIcon /> Instagram
               </a>
-              Linkedin
             </div>
+
+            <div className="footer-social">
+              <a
+                href="https://twitter.com/Cometogether_Wi?t=nrNaPO8apLmPUSaFENY-Ew&s=08"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <TwitterIcon /> Twitter
+              </a>
+            </div>
+            {/* 
+            <div className="footer-social">
+              <a
+                href="https://www.instagram.com/dianah_kamande/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                <LinkedInIcon />
+                Linkedin
+                </a>
+            </div> */}
           </div>
           <div className="footer-content col-lg-5">
             <h3>Where We At</h3>

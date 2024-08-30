@@ -46,7 +46,7 @@ export default function Hero() {
     <div className="hero">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
-          <div className="left-hero h-100  col-lg-6">
+          <div className="left-hero h-100 col-lg-4">
             <div className="container h-100  d-flex justify-content-evenly align-items-center">
               <div className="content h-100 d-flex flex-column justify-content-evenly align-items-center text-center">
                 <h1>Come Together Widows and Orphans Organization.</h1>
@@ -64,7 +64,7 @@ export default function Hero() {
             </div>
           </div>
           <div
-            className="right-hero col-lg-6"
+            className="right-hero col-lg-8"
             style={{ backgroundImage: cardBgImage }}
           ></div>
         </div>

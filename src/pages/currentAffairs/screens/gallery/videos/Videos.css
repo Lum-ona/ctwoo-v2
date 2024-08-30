@@ -1,0 +1,15 @@
+.video-gallery {
+  margin-top: 18vh;
+}
+.video-gallery video {
+  border-radius: 10px;
+  width: 22vw;
+  cursor: pointer;
+  margin-top: 3vh;
+  box-shadow: 0px 0px 2px gray;
+  transition: 0.4s;
+}
+.video-gallery video:hover {
+  box-shadow: 0px 0px 10px gray;
+  width: 21.5vw;
+}
