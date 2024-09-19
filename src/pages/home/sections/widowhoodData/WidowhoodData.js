@@ -1,6 +1,6 @@
 import Title from "../../../../components/titles/Title";
 import "./WidowhoodData.css";
-import graph from "../../../../assets/img/widohoodData.png";
+import graph from "../../../../assets/img/widowhoodData.jpeg";
 import img1 from "../../../../assets/img/widowhood/widowhood1.jpeg";
 import img2 from "../../../../assets/img/widowhood/widowhood2.jpeg";
 import img3 from "../../../../assets/img/widowhood/widowhood3.jpeg";

@@ -6,17 +6,17 @@
   align-items: center;
   margin-bottom: 10vh;
 }
-.reports .container {
-  margin-top: 14vh;
-  width: 90%;
+.reports .report-container {
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
   flex-wrap: wrap;
 }
-.reports .container .report-card {
+.reports .report-container .report-card {
   width: 20vw;
+  min-width: 20vw;
   min-height: 40vh;
   box-shadow: 0px 0px 10px #5902ab;
   border-radius: 10px;
@@ -28,15 +28,15 @@
   text-decoration: none;
   color: #5902ab;
   transition: 0.4s;
-  margin-top: 4vh;
+  margin: 2vh 2vw;
 }
-.reports .container .report-card .image {
+.reports .report-container .report-card .image {
   height: 28vh;
   width: 100%;
   background-position: center;
   background-size: cover;
 }
-.reports .container .report-card .doc-title {
+.reports .report-container .report-card .doc-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,14 +44,30 @@
   height: 30%;
   padding: 10px;
 }
-.reports .container .report-card:hover {
+.reports .report-container .report-card:hover {
   transform: scale(1.05);
 }
-@media (max-width: 768px) {
-  .reports .container {
-    flex-direction: column;
+@media (max-width: 1102px) {
+  .reports .report-container .report-card {
+    width: 28vw;
+    min-width: 28vw;
+    /* margin: 2vh 2vw; */
   }
-  .reports .container .report-card {
+}
+@media (max-width: 992px) {
+  .reports .report-container .report-card {
+    width: 43vw;
+    min-width: 43vw;
+    margin: 2vh 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .reports .report-container {
+    flex-direction: column;
+    width: 95;
+    min-width: 95;
+  }
+  .reports .report-container .report-card {
     width: 90vw;
     margin-top: 10px;
   }

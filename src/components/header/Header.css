@@ -4,12 +4,12 @@
   top: 0;
   left: 0;
   right: 0;
-  min-height: 10vh;
+  /* min-height: 10vh; */
   z-index: 1999;
   box-shadow: 0px 5px 5px rgba(128, 128, 128, 0.511);
 }
 .header .logo {
-  width: 260px;
+  width: 180px;
 }
 .header nav {
   display: flex;

@@ -2,8 +2,10 @@
   margin-top: 5vh;
   margin-bottom: 10vh;
 }
+
 .annual-events .event {
-  width: 31%;
+  margin: 2vh 1.5vw;
+  width: 30vw;
 }
 .annual-events .images {
   border-radius: 10px;
@@ -12,12 +14,13 @@
 
 .annual-events .event-img {
   height: 130px;
-  width: inherit;
+  min-width: 14vw;
+  max-width: 14vw;
   border: solid 1px #7c2ae8;
   object-fit: cover;
   padding: 0;
 }
-.annual-events .container .event-content {
+.annual-events .annual-container .event-content {
   min-height: 45vh;
 }
 
@@ -48,4 +51,27 @@
   border: none;
   background-color: #7c2ae8;
   color: white;
+}
+
+@media (max-width: 992px) {
+  .annual-events .event {
+    margin: 2vh 1.5vw;
+    width: 45vw;
+  }
+  .annual-events .event-img {
+    height: 150px;
+    min-width: 20vw;
+    max-width: 20vw;
+  }
+}
+@media (max-width: 778px) {
+  .annual-events .event {
+    margin: 2vh 1.5vw;
+    width: 95vw;
+  }
+  .annual-events .event-img {
+    height: 25vh;
+    min-width: 45vw;
+    max-width: 45vw;
+  }
 }

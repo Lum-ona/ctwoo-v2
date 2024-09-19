@@ -7,12 +7,12 @@ import img3 from "../../../../assets/img/empower.jpeg";
 export default function OurStrategy() {
   return (
     <div className="our-strategy">
-      <div className="container">
-        <div className="row d-flex justify-content-around align-items-center">
-          <div className="our-strategy-title col-lg-1">
-            <Title title="Our Strategy" />
+      <div className="strategy-container">
+        <div className="strategy-row d-flex flex-column flex-lg-row flex-wrap align-items-center">
+          <div className="our-strategy-title">
+            <h2>Our Strategy</h2>
           </div>
-          <div className="advocate col-lg-3">
+          <div className="advocate">
             <h2>ADVOCATE</h2>
             <p>
               We employs a multi- faceted advocacy strategy, focusing on raising
@@ -23,7 +23,7 @@ export default function OurStrategy() {
             </p>
             <img alt="advocate" className="our-strategy-img" src={img2} />
           </div>
-          <div className="inspire col-lg-3">
+          <div className="inspire">
             <h2>INSPIRE</h2>
             <p>
               We utilizes the Inspire strategy by implementing community-based
@@ -35,7 +35,7 @@ export default function OurStrategy() {
             </p>
             <img alt="advocate" className="our-strategy-img" src={img3} />
           </div>
-          <div className="empower col-lg-3">
+          <div className="empower">
             <h2>EMPOWER</h2>
             <p>
               We centers on providing widows with access to vocational training

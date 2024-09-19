@@ -12,6 +12,7 @@ import doc10 from "../../../../assets/documents/reports/doc10.pdf";
 import doc11 from "../../../../assets/documents/reports/doc11.pdf";
 import doc12 from "../../../../assets/documents/reports/doc12.pdf";
 import doc13 from "../../../../assets/documents/reports/doc13.pdf";
+import doc14 from "../../../../assets/documents/reports/doc14.pdf";
 
 import img1 from "../../../../assets/img/reports/2.png";
 import img2 from "../../../../assets/img/reports/3.png";
@@ -35,7 +36,7 @@ export default function Reports() {
     <div className="reports">
       <Title className="reports" />
 
-      <div className="container">
+      <div className="report-container">
         {reportCard({
           title: "2023 POST-IWD CELEBRATIONS REPORT",
           document: doc1,
@@ -107,6 +108,11 @@ export default function Reports() {
           title: "COMBINED REPORTS OF PRE, MAIN & POST IWD CELEBRATIONS",
           document: doc13,
           bgImg: img1,
+        })}
+        {reportCard({
+          title: "16 DAYS OF ACTIVISM MAIN REPORT 2023",
+          document: doc14,
+          bgImg: img2,
         })}
       </div>
     </div>

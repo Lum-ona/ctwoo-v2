@@ -38,7 +38,6 @@ function App() {
           <Preloader />
         ) : (
           <>
-            {" "}
             <Header />
             <ScrollToTopOnRouteChange />
             <main>

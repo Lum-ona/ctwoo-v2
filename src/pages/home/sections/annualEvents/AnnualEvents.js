@@ -18,109 +18,73 @@ import intDoc from "../../../../assets/documents/events/doc2.pdf";
 import dayDoc from "../../../../assets/documents/events/doc3.pdf";
 
 export default function AnnualEvents() {
+  const annualEvent = ({
+    title,
+    description,
+    img1,
+    img2,
+    img3,
+    img4,
+    docRef,
+  }) => (
+    <div className="event d-flex flex-column align-items-center ">
+      <div className="images">
+        <div className="d-flex">
+          <img alt="ctwoo event" className="col event-img" src={img1} />
+          <img alt="ctwoo event" className="col event-img" src={img2} />
+        </div>
+        <div className="d-flex">
+          <img alt="ctwoo event" className="col event-img" src={img3} />
+          <img alt="ctwoo event" className="col event-img" src={img4} />
+        </div>{" "}
+      </div>
+      <div className="event-content d-flex flex-column align-items-center justify-content-between">
+        <div className="event-title">
+          <h3>{title}</h3>
+        </div>
+        <p>{description}</p>
+        <a href={docRef} target={"_blank"} rel="noreferrer" className="btn">
+          learn more
+        </a>
+      </div>
+    </div>
+  );
+
   return (
     <div className="annual-events">
       <Title title={"Our Main Annual Events"} />
-      <div className="container">
-        <div className="row d-flex justify-content-between align-items-start">
-          <div className="event col-lg-3">
-            <div className="images">
-              <div className="row">
-                <img alt="ctwoo event" className="col event-img" src={val1} />
-                <img alt="ctwoo event" className="col event-img" src={val2} />
-              </div>
-              <div className="row">
-                <img alt="ctwoo event" className="col event-img" src={val3} />
-                <img alt="ctwoo event" className="col event-img" src={val4} />
-              </div>{" "}
-            </div>
-            <div className="event-content d-flex flex-column align-items-center justify-content-between">
-              <div className="event-title">
-                <h3>Valentines Dinner</h3>
-              </div>
-              <p>
-                CTWOO’s valentines dinner events serve as a platform for
-                networking, sharing success stories, and discussing future
-                collaborations to further our goal of achieving SDG 4.During the
-                dinner, CTWOO highlights our ongoing efforts and achievements in
-                supporting widows in line with Economic, Social and Legal
-                aspects.
-              </p>
-              <a
-                href={valDoc}
-                target={"_blank"}
-                rel="noreferrer"
-                className="btn"
-              >
-                learn more
-              </a>
-            </div>
-          </div>
-          <div className="event col-lg-3 d-flex flex-column justify-content-between">
-            <div className="images">
-              <div className="row">
-                <img alt="ctwoo event" className="col event-img" src={int1} />
-                <img alt="ctwoo event" className="col event-img" src={int2} />
-              </div>
-              <div className="row">
-                <img alt="ctwoo event" className="col event-img" src={int3} />
-                <img alt="ctwoo event" className="col event-img" src={int4} />
-              </div>
-            </div>
-            <div className="event-content d-flex flex-column align-items-center justify-content-between">
-              <div className="event-title">
-                <h3>International Widows Day</h3>
-              </div>
-              <p>
-                Since 2016, Come Together Widows and Orphans Organization has
-                hosted annual International Widows Day celebrations in Kenya,
-                dedicated to supporting widows and their families. These
-                celebrations have provided a platform for empowering widows both
-                economically and legally.{" "}
-              </p>
-              <a
-                href={intDoc}
-                target={"_blank"}
-                rel="noreferrer"
-                className="btn"
-              >
-                learn more
-              </a>
-            </div>
-          </div>
-          <div className="event col-lg-3">
-            <div className="images">
-              <div className="row">
-                <img alt="ctwoo event" className="col event-img" src={day1} />
-                <img alt="ctwoo event" className="col event-img" src={day2} />
-              </div>
-              <div className="row">
-                <img alt="ctwoo event" className="col event-img" src={day3} />
-                <img alt="ctwoo event" className="col event-img" src={day4} />
-              </div>
-            </div>
-            <div className="event-content d-flex flex-column align-items-center justify-content-between">
-              <div className="event-title">
-                <h3>16 Days of Activism</h3>
-              </div>
-              <p>
-                Over the past five years, our 16 Days of Activism Against
-                Gender-Based Violence campaigns have made significant strides in
-                addressing and combating violence against women and girls. Each
-                year, from November 25 to December 10, we have dedicated
-                ourselves to advocating for survivors' rights, challenging
-                harmful cultural practices, and promoting systemic change.{" "}
-              </p>
-              <a
-                href={dayDoc}
-                target={"_blank"}
-                rel="noreferrer"
-                className="btn"
-              >
-                learn more
-              </a>
-            </div>
-          </div>
+      <div className="annual-container">
+        <div className="d-flex flex-wrap align-items-start">
+          {annualEvent({
+            title: "Valentines Dinner",
+            description:
+              "CTWOO’s valentines dinner events serve as a platform for networking, sharing success stories, and discussing future collaborations to further our goal of achieving SDG 4.During the dinner, CTWOO highlights our ongoing efforts and achievements in supporting widows in line with Economic, Social and Legal aspects.",
+            img1: val1,
+            img2: val2,
+            img3: val3,
+            img4: val4,
+            docRef: valDoc,
+          })}
+          {annualEvent({
+            title: "International Widows Day",
+            description:
+              "Since 2016, Come Together Widows and Orphans Organization has hosted annual International Widows Day celebrations in Kenya, dedicated to supporting widows and their families. These celebrations have provided a platform for empowering widows both economically and legally.",
+            img1: int1,
+            img2: int2,
+            img3: int3,
+            img4: int4,
+            docRef: intDoc,
+          })}
+          {annualEvent({
+            title: "16 Days of Activism",
+            description:
+              "Over the past five years, our 16 Days of Activism Against Gender-Based Violence campaigns have made significant strides in addressing and combating violence against women and girls. Each year, from November 25 to December 10, we have dedicated ourselves to advocating for survivors' rights, challenging harmful cultural practices, and promoting systemic change.",
+            img1: day1,
+            img2: day2,
+            img3: day3,
+            img4: day4,
+            docRef: dayDoc,
+          })}
         </div>
       </div>
     </div>
