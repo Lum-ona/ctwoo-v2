@@ -7,6 +7,8 @@ import nkatha from "../../../../assets/img/board/nkatha.jpeg";
 import raphael from "../../../../assets/img/board/raphael.jpeg";
 import peter from "../../../../assets/img/board/peter.jpeg";
 import rashid from "../../../../assets/img/board/rashid.jpeg";
+import richard from "../../../../assets/img/board/richard.jpeg";
+import josphine from "../../../../assets/img/board/josphine.jpeg";
 import EastIcon from "@mui/icons-material/East";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 
@@ -51,10 +53,24 @@ export default function OurBoard() {
     },
     {
       img: raphael,
-      name: "Raphael Okwama ",
+      name: "Raphael Okwama",
       role: "BOARD MEMBER",
       profile:
         "Create visually compelling designs that effectively convey messages and align with client or project requirements.",
+    },
+    {
+      img: richard,
+      name: "Richard Kuria Wamugu",
+      role: "BOARD MEMBER",
+      profile:
+        "Results-oriented Business Banking Manager with over 10 years of experience in driving business growth, managing customer relationships, and leading teams, specializing in SME and Personal Banking. Proven track record of exceeding targets, optimizing operations, ensuring compliance, and enhancing financial performance while delivering exceptional customer service..",
+    },
+    {
+      img: josphine,
+      name: "Ms. Josphine Maina",
+      role: "BOARD MEMBER",
+      profile:
+        "A driven Food Science and Nutrition graduate with experience in both the financial sector and community mentorship. Josphine Maina combines strong financial literacy with a passion for empowering individuals through her role at Equity Group Foundation, contributing to societal growth.",
     },
   ];
 
