@@ -40,7 +40,7 @@ export default function Highlights() {
         "CTWOO makes the efforts to address the specific needs of orphaned boys and girls, reduce absenteeism from school due to lack of hygiene products, and promote their overall wellbeing and self-esteem. CTWOO does this by providing essential hygiene and personal care items including sanitary pads, toiletries and undergarments. This helps to maintain their health dignity and confidence during menstruation and daily life.",
     },
     {
-      title: "PUSHING FOR WIDOWS MANUAL ON ECONOMIC EMPOWERMENT",
+      title: "CANDID DISCUSSIONS ON WIDOWS EMPOWERMENT",
       img: img5,
       content:
         "CTWOO actively engages in deliberations with various stakeholders who assist in the formulation of policies for widowed persons. CTWOO is currently developing a manual on economic empowerment for widows in collaboration with the President's Advisor on Women's Rights, Hon. Harriet Chiggai",

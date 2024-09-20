@@ -5,18 +5,28 @@
 }
 .widowhood-data .widowhood-data-img {
   height: 200px;
-  width: 400px;
+  width: 320px;
   border-radius: 20px;
   object-fit: cover;
+}
+.widowhood-data h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  text-transform: uppercase;
 }
 .widowhood-data .widowhood-data-content {
   width: 100vw;
   background-color: #7c2ae8;
   color: white;
-  height: 20vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  height: auto;
   min-height: 20vh;
-  margin-top: 3vh;
   margin-bottom: 3vh;
+  text-align: center;
 }
 .widowhood-data .widowhood-stats .widowhood-stats-img {
   width: 60%;

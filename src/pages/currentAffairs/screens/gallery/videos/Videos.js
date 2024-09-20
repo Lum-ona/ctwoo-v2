@@ -13,14 +13,12 @@ export default function Videos() {
       key={keyIndex}
       className="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-ah"
     >
-      {/* <img
-        src={img1}
-        className="img-fluid"
-        alt="Antelop - Alphabet Series - WildNow Foundation"
-      /> */}
       <video controls>
-        <source src={vid} />
+        <source src={vid} type="video/mp4" />
+        <source src={vid.replace(".mp4", ".webm")} type="video/webm" />
+        Your browser does not support the video tag.
       </video>
+
       <h1
         style={{
           color: "rgba(255, 255, 255, 0.787)",
@@ -29,11 +27,8 @@ export default function Videos() {
           top: "30%",
           left: "36%",
         }}
-      >
-        {/* A */}
-      </h1>
+      ></h1>
       <div className="portfolio-info">
-        {/* <h4>Antelope</h4> */}
         <a
           href="https://www.youtube.com/watch?v=LHsq9y2PibM"
           className="glightbox btn-watch-video d-flex align-items-center"

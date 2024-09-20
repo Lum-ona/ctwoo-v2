@@ -2,6 +2,8 @@ import Title from "../../../../../../components/titles/Title";
 import "./Skills.css";
 import img1 from "../../../../../../assets/img/skills/img1.jpeg";
 import img2 from "../../../../../../assets/img/skills/img2.jpeg";
+import img3 from "../../../../../../assets/img/skills/img3.jpeg";
+import img4 from "../../../../../../assets/img/skills/img4.jpeg";
 
 export default function Skills() {
   return (
@@ -47,11 +49,11 @@ export default function Skills() {
             <div className="row skills-images">
               <div
                 className="col image"
-                style={{ backgroundImage: `url(${img1})` }}
+                style={{ backgroundImage: `url(${img3})` }}
               ></div>
               <div
                 className="col image"
-                style={{ backgroundImage: `url(${img2})` }}
+                style={{ backgroundImage: `url(${img4})` }}
               ></div>
             </div>
           </div>

@@ -43,6 +43,9 @@
   text-align: center;
   height: 30%;
   padding: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 .reports .report-container .report-card:hover {
   transform: scale(1.05);

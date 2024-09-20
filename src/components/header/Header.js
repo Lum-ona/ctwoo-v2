@@ -120,14 +120,14 @@ export default function Header() {
                 onMouseLeave={(e) => dropDownMouseLeave(e)}
               >
                 Our Team
-                <div className="drop-down-drop-down">
+                {/* <div className="drop-down-drop-down">
                   <Link
                     to="/about/our-interns"
                     className="drop-down-drop-down-option"
                   >
                     Our Interns
                   </Link>
-                </div>
+                </div> */}
               </Link>
             </div>
           </div>

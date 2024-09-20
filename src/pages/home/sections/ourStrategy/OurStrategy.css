@@ -8,7 +8,7 @@
 }
 
 .our-strategy .strategy-container .strategy-row > div {
-  height: 65vh;
+  height: auto;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -28,8 +28,9 @@
 .our-strategy .strategy-container > .strategy-row > div img {
   height: 180px;
   background-color: black;
-  width: 250px;
+  width: 95%;
   object-fit: cover;
+  border-radius: 10px;
 }
 .our-strategy .strategy-container > .strategy-row > div:nth-child(1) {
   /* background-color: blue; */

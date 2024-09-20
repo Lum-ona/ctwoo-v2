@@ -2,7 +2,7 @@ import "./Reports.css";
 import doc1 from "../../../../assets/documents/reports/doc1.PDF";
 import doc2 from "../../../../assets/documents/reports/doc2.PDF";
 import doc3 from "../../../../assets/documents/reports/doc3.PDF";
-import doc4 from "../../../../assets/documents/reports/doc4.pdf";
+import doc4 from "../../../../assets/documents/reports/doc4.PDF";
 import doc5 from "../../../../assets/documents/reports/doc5.pdf";
 import doc6 from "../../../../assets/documents/reports/doc6.pdf";
 import doc7 from "../../../../assets/documents/reports/doc7.pdf";
@@ -14,10 +14,11 @@ import doc12 from "../../../../assets/documents/reports/doc12.pdf";
 import doc13 from "../../../../assets/documents/reports/doc13.pdf";
 import doc14 from "../../../../assets/documents/reports/doc14.pdf";
 
-import img1 from "../../../../assets/img/reports/2.png";
-import img2 from "../../../../assets/img/reports/3.png";
-import img3 from "../../../../assets/img/reports/1.png";
+import img1 from "../../../../assets/img/reports/1.png";
+import img2 from "../../../../assets/img/reports/2.png";
+import img3 from "../../../../assets/img/reports/3.png";
 import img4 from "../../../../assets/img/reports/4.png";
+
 import Title from "../../../../components/titles/Title";
 
 export default function Reports() {
@@ -38,6 +39,31 @@ export default function Reports() {
 
       <div className="report-container">
         {reportCard({
+          title: "Valentines Dinner Report ",
+          document: doc5,
+          bgImg: img1,
+        })}
+
+        {reportCard({
+          title: "INTERNATIONAL WIDOWS DAY REPORT",
+          document: doc12,
+          bgImg: img2,
+        })}
+
+        {reportCard({
+          title: "16 DAYS OF ACTIVISM REPORT",
+          document: doc11,
+          bgImg: img3,
+        })}
+        {reportCard({
+          title: "CSW REPORT",
+          document: doc4,
+          bgImg: img4,
+        })}
+
+        {/*  */}
+        {/* 
+        {reportCard({
           title: "2023 POST-IWD CELEBRATIONS REPORT",
           document: doc1,
           bgImg: img1,
@@ -53,16 +79,7 @@ export default function Reports() {
           document: doc3,
           bgImg: img3,
         })}
-        {reportCard({
-          title: "REPORT ON THE 67TH CSW",
-          document: doc4,
-          bgImg: img4,
-        })}
-        {reportCard({
-          title: "CTWOO 7TH PREVALENTINES DINNER",
-          document: doc5,
-          bgImg: img4,
-        })}
+
         {reportCard({
           title: "CSW 68 REPORT",
           document: doc6,
@@ -94,17 +111,6 @@ export default function Reports() {
         })}
 
         {reportCard({
-          title:
-            "A REPORT ON THE 16 DAYS OF ACTIVISM CAMPAIGN HELD ON 2ND DECEMBER 2023 IN KASARANI NAIROBI COUNTY DURING BETHEL WIDOWS GRADUATION CEREMONY",
-          document: doc11,
-          bgImg: img4,
-        })}
-        {reportCard({
-          title: "INTERNATIONAL WIDOWS DAY 2024 ACTIVITIES SUMMARY REPORT 2024",
-          document: doc12,
-          bgImg: img4,
-        })}
-        {reportCard({
           title: "COMBINED REPORTS OF PRE, MAIN & POST IWD CELEBRATIONS",
           document: doc13,
           bgImg: img1,
@@ -113,7 +119,7 @@ export default function Reports() {
           title: "16 DAYS OF ACTIVISM MAIN REPORT 2023",
           document: doc14,
           bgImg: img2,
-        })}
+        })} */}
       </div>
     </div>
   );

@@ -5,12 +5,11 @@ import hero2 from "../../../../assets/img/hero/hero2.jpeg";
 import hero3 from "../../../../assets/img/hero/hero3.jpeg";
 
 export default function Hero() {
-  const [cardBgImage, setCardBgImage] = useState(null);
+  const [currentImage, setCurrentImage] = useState(0);
+  const [imageClass, setImageClass] = useState("slide-in");
+  const backgroundImagesList = [hero1, hero2, hero3];
 
   useEffect(() => {
-    const backgroundImagesList = [hero1, hero2, hero3];
-    let intervalId;
-
     const getRandomIndexExcluding = (excludeIndex) => {
       let randomIndex;
       do {
@@ -19,40 +18,30 @@ export default function Hero() {
       return randomIndex;
     };
 
-    const flipAndChangeImages = () => {
-      const frontRandomIndex = Math.floor(
-        Math.random() * backgroundImagesList.length
-      );
-      const cardRandomIndex = getRandomIndexExcluding(frontRandomIndex);
-
-      setCardBgImage(`url(${backgroundImagesList[cardRandomIndex]})`);
+    const slideAndChangeImages = () => {
+      setImageClass("slide-out");
+      setTimeout(() => {
+        const newCurrentImage = getRandomIndexExcluding(currentImage);
+        setCurrentImage(newCurrentImage);
+        setImageClass("slide-in");
+      }, 1); // Match the timeout to the slide-out duration
     };
 
-    // Initial flip and image change
-    flipAndChangeImages();
-
-    // Set an interval to trigger the flip and image change every 10 seconds
-    intervalId = setInterval(() => {
-      flipAndChangeImages();
-    }, 5000); // 10 seconds in milliseconds
-
-    // Clear the interval when the component is unmounted
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
+    const intervalId = setInterval(slideAndChangeImages, 5000); // 10 seconds
+    return () => clearInterval(intervalId);
+  }, [currentImage]);
 
   return (
     <div className="hero">
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
           <div className="left-hero h-100 col-lg-4">
-            <div className="container h-100  d-flex justify-content-evenly align-items-center">
+            <div className="container h-100 d-flex justify-content-evenly align-items-center">
               <div className="content h-100 d-flex flex-column justify-content-evenly align-items-center text-center">
                 <h1>Come Together Widows and Orphans Organization.</h1>
                 <p>
                   Champions for the protection of Human Rights and Uphold the
-                  Dignity of Widows, in alighnment with international standards
+                  Dignity of Widows, in alignment with international standards
                   including the Convention on the Elimination of All Forms of
                   Discrimination against Women (CEDAW) and the Convention on the
                   Rights of The Child. A core aspect of our mandate involves
@@ -63,10 +52,14 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div
-            className="right-hero col-lg-8"
-            style={{ backgroundImage: cardBgImage }}
-          ></div>
+          <div className={`right-hero col-lg-8 `}>
+            <div
+              className={`right-hero-image ${imageClass}`}
+              style={{
+                backgroundImage: `url(${backgroundImagesList[currentImage]})`,
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     </div>

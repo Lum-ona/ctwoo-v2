@@ -9,6 +9,15 @@ import beth from "../../../../assets/img/team/beth.jpeg";
 import sheryl from "../../../../assets/img/team/cheryl.jpeg";
 import peter from "../../../../assets/img/team/peter.jpeg";
 import alex from "../../../../assets/img/team/alex.jpeg";
+import alice from "../../../../assets/img/team/alice.jpeg";
+import praise from "../../../../assets/img/team/praise.jpeg";
+import boaz from "../../../../assets/img/team/boaz.jpeg";
+import florance from "../../../../assets/img/team/florance.jpeg";
+import ruth from "../../../../assets/img/team/ruth.jpeg";
+import patrick from "../../../../assets/img/team/patrick.jpeg";
+import shema from "../../../../assets/img/team/shema.jpeg";
+import fred from "../../../../assets/img/team/fred.jpeg";
+import joshua from "../../../../assets/img/team/joshua.jpeg";
 
 export default function OurTeam() {
   const teams = [
@@ -20,14 +29,14 @@ export default function OurTeam() {
         "Ms. Sheryl Otieno is a dynamic and compassionate Community development officer with a Bachelor of Science in Community Development from Chuka University.",
     },
     {
-      img: "",
+      img: alice,
       role: "Psycho-Social support officer ",
       name: " Alice Wambui Chomba",
       profile:
         "Ms. Alice Wambui is a passionate educator with a year of teaching experience, during which she also served as a guidance and counselling teacher.. As a Mastercard Foundation Scholar at the United States International University of Africa (USIU-A), she is currently pursuing a Bachelor of Arts in Psychology with a minor in Health Psychology.",
     },
     {
-      img: "",
+      img: praise,
       role: "Tech- Facilitated GBV Youths Program Officer",
       name: "Praise Nyokabi ",
       profile:
@@ -41,50 +50,50 @@ export default function OurTeam() {
         "Has spent the last three (3) years Advocating for the Rights of Widows and Orphans Organization through his adept media and communication skills. He is dedicated to elevating the voices and tales of widows and orphans in order to highlight their struggles, victories, and resilience. ",
     },
     {
-      img: "",
+      img: boaz,
       role: "DRIVER",
       name: "Boaz Ndung’u",
       profile:
         "Boaz Ndungu Njenga is a dedicated driver at Come Together Widows and Orphans Organization (CTWOO). In addition to his role at CTWOO, he also works with Business and Online Cabs, showcasing his versatility and commitment to providing reliable transportation services",
     },
     {
-      img: "",
+      img: florance,
       role: "Programs Department",
       name: "Florance Akinyi",
       profile:
         "Ms. Florance Akinyi, is pursuing Bachelor of Arts in Development Studies in the Technical University of Mombasa. ",
     },
     {
-      img: "",
+      img: ruth,
       role: "Resource Mobilization Officer",
       name: "Ruth Moraa Ombui",
       profile:
         "Ms. Ruth Moraa is a dynamic young professional armed with a Bachelor's degree in Community Development & specializing in resource mobilization, boasting more than 2 years of hands-on experience in the field.",
     },
     {
-      img: "",
+      img: patrick,
       role: "Spiritual and Mental Health Officer",
       name: "Rev. Patrick",
       profile:
         "Pastor Patrick is a trained pastor with over 11 years of experience providing counseling services to church and community members. ",
     },
     {
-      img: "",
+      img: shema,
       role: "IT Department",
       name: "Shema (Nzabakamira) Manasseh",
       profile:
         "He studied information Technology at the United States International University Africa, where he is also a Software Engineering student. Shema is a participant in The Duke of Edinburgh International Award at the Gold level and a MasterCard Foundation Scholar.",
     },
     {
-      img: "",
-      role: "Country Director, Kenya ",
+      img: fred,
+      role: "GFW country director, Kenya ",
       name: "Mr. Fredrick Onyambu",
       profile:
         "He holds a BCOM degree in Finance and boasts a range of certifications in mediation, leadership, and program management.",
     },
     {
       img: delvine,
-      role: "Chief Editor",
+      role: "Project Manager",
       name: "Delvine Awuor",
       profile:
         "She holds a Bachelor of Arts in Development Studies from Maseno University and a Diploma in Procurement and Supply Chain Management from Meru National Polytechnic.",
@@ -118,7 +127,7 @@ export default function OurTeam() {
         "She holds a diploma in Community Development and Social Work from Chuka University. Her hands-on approach and deep understanding of community needs make her an invaluable asset in driving social and economic transformation.",
     },
     {
-      img: "",
+      img: joshua,
       role: "Finance Manager -",
       name: " Mr. Joshua Moganda",
       profile:

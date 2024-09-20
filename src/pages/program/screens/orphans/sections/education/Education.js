@@ -2,6 +2,8 @@ import Title from "../../../../../../components/titles/Title";
 import "./Education.css";
 import img1 from "../../../../../../assets/img/education/img1.jpeg";
 import img2 from "../../../../../../assets/img/education/img2.jpeg";
+import img7 from "../../../../../../assets/img/education/img7.jpeg";
+import img8 from "../../../../../../assets/img/education/img8.jpeg";
 
 export default function Education() {
   return (
@@ -18,11 +20,11 @@ export default function Education() {
             className="ed-image col-lg-3"
           ></div>
           <div
-            style={{ backgroundImage: `url(${img1})` }}
+            style={{ backgroundImage: `url(${img7})` }}
             className="ed-image col-lg-3"
           ></div>
           <div
-            style={{ backgroundImage: `url(${img2})` }}
+            style={{ backgroundImage: `url(${img8})` }}
             className="ed-image col-lg-3"
           ></div>
         </div>
